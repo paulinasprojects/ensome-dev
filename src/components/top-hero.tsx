@@ -1,4 +1,4 @@
-import "../styles/top-hero.scss";
+import "@/styles/top-hero.scss";
 import { IoPlayCircleOutline } from "react-icons/io5";
 
 

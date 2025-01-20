@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../styles/header.scss";
+import "@/styles/header.scss";
 import logo from '/ensone-logo.svg';
 import { IoPlayCircleOutline } from "react-icons/io5";
 

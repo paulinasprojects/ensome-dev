@@ -1,0 +1,53 @@
+@import "./responsive.scss";
+
+.ensone-in-numbers-main-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.ensome-main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .ensome-content-title {
+    color: var(--black);
+    font-size: var(--heading-two);
+    font-weight: 800;
+    line-height: var(--leading-xl);
+  }
+
+  .ensome-in-numbers-hr {
+    margin-top: 15px;
+    width: 95px;
+    height: 4px;
+    background-color: var(--primary-blue);
+  }
+
+  .ensome-main-content-numbers-container {
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;
+
+    .ensome-main-content-numbers {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .ensome-main-content-title {
+      color: var(--grey);
+      font-size: var(--medium);
+      line-height: var(--leading-sm);
+      font-weight: 600;
+    }
+
+    .ensome-main-content-number {
+      font-size: 75px;
+      color: var(--primary-blue);
+      font-weight: normal;
+      line-height: 100%;
+    }
+  }
+}

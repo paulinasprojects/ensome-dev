@@ -1,4 +1,4 @@
-import "../styles/main-hero.scss"
+import "@/styles/main-hero.scss"
 import heroOne from '/hero-one.png';
 import heroTwo from '/hero-two.png';
 
