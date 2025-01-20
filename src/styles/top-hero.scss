@@ -64,8 +64,10 @@
           .top-hero-play-icon {
             width: 24px;
             height: 24px;
-            color: var(--white);
           }
+        }
+        .top-hero-watch-demo-button:hover {
+          color: var(--primary-blue);
         }
       }
     }

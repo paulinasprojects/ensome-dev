@@ -1,0 +1,113 @@
+@import "./responsive.scss";
+
+.main-hero-main-container {
+  background-color: var(--background);
+
+  .main-hero-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  
+  .main-hero-top-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .main-hero-top-content-container {
+     .main-hero-top-title {
+      color: var(--black);
+      font-size: var(--heading-two);
+      font-weight: 800;
+      line-height: var(--leading-xl);
+     }
+
+     .main-hero-top-hr {
+      margin-top: 15px;
+      width: 95px;
+      height: 4px;
+      background-color: var(--primary-blue);
+     }
+
+     .main-hero-top-description {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: var(--grey);
+      font-size: var(--heading-five);
+      line-height: var(--leading-ml);
+      font-weight: normal;
+     }
+     .main-hero-top-button {
+      background-color: var(--primary-blue);
+      color: var(--white);
+      border-radius: 6px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: var(--large);
+      font-weight: bold;
+      line-height: var(--leading-sm);
+     }
+
+     .main-hero-top-button:hover {
+      background-color: #467dff;
+     }
+    }
+  }
+  .main-hero-bottom-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .main-hero-bottom-content-container {
+      .main-hero-bottom-title {
+        color: var(--black);
+        font-size: var(--heading-two);
+        font-weight: 800;
+        line-height: var(--leading-xl);
+      }
+      .main-hero-bottom-hr {
+        margin-top: 15px;
+        width: 95px;
+        height: 4px;
+        background-color: var(--primary-blue);
+      }
+      .main-hero-bottom-description {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: var(--grey);
+        font-size: var(--heading-five);
+        line-height: var(--leading-ml);
+        font-weight: normal;
+      }
+
+      .main-hero-bottom-button {
+        background-color: var(--primary-blue);
+        color: var(--white);
+        border-radius: 6px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: var(--large);
+        font-weight: bold;
+        line-height: var(--leading-sm);
+      }
+      .main-hero-bottom-button:hover {
+        background-color: #467dff;
+      }
+    }
+  }
+  
+}
