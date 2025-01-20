@@ -1,0 +1,54 @@
+@import "./responsive.scss";
+
+.main-header-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 145px;
+  background-color: var(--primary-dark-blue);
+  border-bottom: 1px solid var(--helper-dark-blue);
+
+  .ensome-logo {
+    width: 141px;
+    height: 46px;
+  }
+
+  .header-link-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .header-link {
+      color: var(--white);
+      font-size: var(--medium);
+      font-weight: 600;
+      line-height: var(--leading-sm);
+    }
+
+    .header-link:hover {
+      border-bottom: 1.5px solid var(--white);
+    }
+  }
+  .header-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--primary-dark-blue);
+    font-size: var(--medium);
+    font-weight: 600;
+    line-height: var(--leading-sm);
+    outline: none;
+    border: none;
+
+    .header-play-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--primary-dark-blue);
+    }
+  }
+}

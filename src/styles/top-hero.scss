@@ -1,0 +1,73 @@
+@import "./responsive.scss";
+
+.top-hero-main-container {
+  padding-top: 106px;
+  padding-bottom: 80px;
+  background-color: var(--primary-dark-blue);
+
+  .top-hero-content-container {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+
+    .top-hero-content-title {
+      font-size: var(--heading-one);
+      line-height: var(--leading-xxl);
+      font-weight: 800;
+      color: var(--white);
+    }
+
+    .top-hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+
+      .top-hero-content-description {
+        color: var(--white);
+        font-size: var(--large);
+        line-height: var(--leading-mds);
+        font-weight: normal;
+      }
+
+      .top-hero-button-container {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        
+        .top-hero-learn-more-button {
+          color: var(--primary-dark-blue);
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          background-color: var(--white);
+          border-radius: 7px;
+          cursor: pointer;
+          font-size: var(--xl);
+          font-weight: bold;
+          line-height: var(--leading-ml);
+        }
+
+        .top-hero-watch-demo-button {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: var(--white);
+          background-color: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          font-size: var(--xl);
+          font-weight: bold;
+          line-height: var(--leading-ml);
+
+          .top-hero-play-icon {
+            width: 24px;
+            height: 24px;
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
