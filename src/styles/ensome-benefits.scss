@@ -1,0 +1,59 @@
+@import "./responsive.scss";
+
+.ensome-benefits-main-container {
+  padding-bottom: 136px;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  .ensome-benefits-image {
+    width: 650px;
+    height: 540px;
+    object-fit: cover;
+  }
+
+  .ensome-benefits-main-title {
+    color: var(--black);
+    font-size: var(--heading-two);
+    font-weight: 800;
+    line-height: var(--leading-xl);
+  }
+
+  .ensome-benefits-hr {
+    margin-top: 15px;
+      width: 95px;
+      height: 4px;
+      background-color: var(--primary-blue);
+  }
+
+  .benefits-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .benefits-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 10px;
+      font-size: var(--heading-five);
+      line-height: var(--leading-md);
+      font-weight: bold;
+      color: var(--black);
+
+      .benefits-icon {
+        width: 24px;
+        height: 24px;
+        color: var(--primary-blue);
+      }
+    }
+
+    .benefits-description {
+      color: var(--grey);
+      font-size: var(--large);
+      font-weight: normal;
+      line-height: var(--leading-mds);
+    }
+  }
+}
