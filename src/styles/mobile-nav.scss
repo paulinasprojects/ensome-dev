@@ -26,6 +26,17 @@
   gap: 16px;
   padding-top: 50px;
   padding-left: 10px;
+
+  .mobile-nav-link {
+    color: var(--white);
+    font-size: var(--medium);
+    font-weight: 600;
+    line-height: var(--leading-sm);
+  }
+
+  .mobile-nav-link:hover {
+    border-bottom: 1.5px solid var(--white);
+  }
 }
 
 .close-icon {
@@ -36,10 +47,12 @@
   height: 24px;
   z-index: 99;
   color: var(--white);
+  cursor: pointer;
 }
 
 .menu-icon {
   width: 34px;
   height: 24px;
   color: var(--white);
+  cursor: pointer;
 }

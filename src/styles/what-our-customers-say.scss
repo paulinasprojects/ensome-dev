@@ -1,1 +1,110 @@
 @import "./responsive.scss";
+
+.what-our-customers-say-main-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--primary-light-blue);
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.what-our-customers-say-main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.what-our-customers-say-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .customers-says-main-content-title {
+    color: var(--black);
+    font-size: var(--heading-two);
+    font-weight: 800;
+    line-height: var(--leading-xl); 
+
+    @include md {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include ms {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include sm {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+    }
+  }
+
+  .customers-says-hr {
+    margin-top: 5px;
+    width: 95px;
+    height: 4px;
+    background-color: var(--primary-blue);
+  }
+
+  .customers-say-button-container {
+    display: flex;
+    gap: 15px;
+    margin-left: 400px;
+
+    @include ms {
+      margin-left: 120px;
+    }
+
+    @include sm {
+      margin-left: 50px;
+    }
+  }
+
+  .customers-say-button {
+    width: 110px;
+    height: 60px;
+    background-color: var(--helper-light-blue);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @include sm {
+      width: 80px;
+    }
+
+    .customers-says-arrow-icon {
+      width: 30px;
+      height: 30px;
+      color: var(--helper-dark-blue);
+    }
+  }
+}
+
+.customer-says-testimonial-card {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  @include sm {
+    flex-direction: column;
+  }
+}

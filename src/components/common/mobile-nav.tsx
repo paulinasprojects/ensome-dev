@@ -18,12 +18,12 @@ const MobileNav = ({ isOpen }: Props) => {
         <div className="mobile-nav-overlay">
           <div className="mobile-nav-link-container">
             <div className="mobile-nav-links-container">
-              <Link to="/">Home</Link>
-              <Link to="/">Solutions</Link>
-              <Link to="/">Pages</Link>
-              <Link to="/">Elements</Link>
-              <Link to="/">Blog</Link>
-              <Link to="/">Contact</Link>
+              <Link to="/" className="mobile-nav-link">Home</Link>
+              <Link to="/" className="mobile-nav-link">Solutions</Link>
+              <Link to="/" className="mobile-nav-link">Pages</Link>
+              <Link to="/" className="mobile-nav-link">Elements</Link>
+              <Link to="/" className="mobile-nav-link">Blog</Link>
+              <Link to="/" className="mobile-nav-link">Contact</Link>
             </div>
           </div>
         </div>
