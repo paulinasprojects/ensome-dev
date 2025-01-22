@@ -4,7 +4,7 @@ import { BrainCircuit, ArrowTrendingLines, Key } from "./common/icons";
 const EnsomeBenefits = () => {
   return (
     <div className="ensome-benefits-main-container">
-      <div><img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1737531226/benefit_nd5htf.png" alt="" className="ensome-benefits-image" /></div>
+     <img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1737531226/benefit_nd5htf.png" alt="" className="ensome-benefits-image" />
       <div>
         <div>
           <span className="ensome-benefits-main-title">The benefits of Ensome</span>

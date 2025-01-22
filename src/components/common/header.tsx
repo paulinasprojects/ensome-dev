@@ -1,13 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "@/styles/header.scss";
 import logo from '/ensone-logo.svg';
 import { IoPlayCircleOutline } from "react-icons/io5";
+import MobileNav from "./mobile-nav";
+import "@/styles/header.scss";
 
 const Header = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className="main-header-container">
       <div>
-        <img src={logo} alt="logo" className="ensome-logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" className="ensome-logo" />
+        </Link>
       </div>
       <div className="header-link-container">
         <Link to="/" className="header-link">Home</Link>
@@ -21,6 +31,9 @@ const Header = () => {
           <IoPlayCircleOutline className="header-play-icon"/>
           Watch the demo
         </button>
+        <div className="mobile-nav" onClick={handleOpen}>
+          <MobileNav isOpen={open}/>
+        </div>
     </div>
   )
 }

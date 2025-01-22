@@ -10,6 +10,10 @@
   background-color: var(--primary-dark-blue);
   border-bottom: 1px solid var(--helper-dark-blue);
 
+  @include ms {
+    gap: 50px;
+  }
+
   .ensome-logo {
     width: 141px;
     height: 46px;
@@ -19,6 +23,14 @@
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @include md {
+      display: flex;
+    }
+
+    @include sm {
+      display: none;
+    }
 
     .header-link {
       color: var(--white);
@@ -45,10 +57,38 @@
     outline: none;
     border: none;
 
+    @include md {
+      display: none;
+    }
+  
+    @include sm {
+     display: none;
+    }
+
     .header-play-icon {
       width: 24px;
       height: 24px;
       color: var(--primary-dark-blue);
     }
+  }
+}
+
+.mobile-nav {
+  @include xl {
+    display: none;
+  }
+
+  @include lg {
+    display: none;
+  }
+
+  @include md {
+    display: none;
+  }
+
+  @include sm {
+    display: flex;
+    // align-items: center;
+    // gap: 19px;
   }
 }

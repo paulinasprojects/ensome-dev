@@ -10,6 +10,18 @@
     width: 650px;
     height: 540px;
     object-fit: cover;
+
+    @include md {
+      display: none;
+    }
+
+    @include ms {
+      display: none;
+    }
+
+    @include sm {
+      display: none;
+    }
   }
 
   .ensome-benefits-main-title {
@@ -54,6 +66,20 @@
       font-size: var(--large);
       font-weight: normal;
       line-height: var(--leading-mds);
+    }
+
+    .benefits-description br {
+      @include md {
+        display: none;
+      }
+
+      @include ms {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
     }
   }
 }
