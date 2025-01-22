@@ -1,11 +1,10 @@
 import "@/styles/ensome-benefits.scss";
-import benefits from '/benefit.png';
 import { BrainCircuit, ArrowTrendingLines, Key } from "./common/icons";
 
 const EnsomeBenefits = () => {
   return (
     <div className="ensome-benefits-main-container">
-      <div><img src={benefits} alt="" className="ensome-benefits-image" /></div>
+      <div><img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1737531226/benefit_nd5htf.png" alt="" className="ensome-benefits-image" /></div>
       <div>
         <div>
           <span className="ensome-benefits-main-title">The benefits of Ensome</span>
