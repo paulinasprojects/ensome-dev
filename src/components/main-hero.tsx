@@ -20,8 +20,8 @@ const MainHero = () => {
         </div>
         {/* Bottom */}
         <div className="main-hero-bottom-container">
-          <div>
-            <img src={heroTwo} alt="" />
+          <div className="main-hero-bottom-image-container">
+            <img src={heroTwo} alt="" className="main-hero-bottom-image" />
           </div>
           <div className="main-hero-bottom-content-container">
             <p className="main-hero-bottom-title">Radically new solutions <br /> for data</p>

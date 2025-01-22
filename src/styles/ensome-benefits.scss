@@ -6,6 +6,21 @@
   align-items: center;
   gap: 45px;
 
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .ensome-benefits-image {
     width: 650px;
     height: 540px;
@@ -29,6 +44,21 @@
     font-size: var(--heading-two);
     font-weight: 800;
     line-height: var(--leading-xl);
+
+    @include md {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include ms {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include sm {
+      font-size: var(--heading-four);
+      line-height: var(--leading-md);
+      }
   }
 
   .ensome-benefits-hr {

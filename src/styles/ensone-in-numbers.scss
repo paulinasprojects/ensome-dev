@@ -3,6 +3,21 @@
 .ensone-in-numbers-main-container {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .ensome-main-content-container {
@@ -11,11 +26,31 @@
   justify-content: center;
   align-items: center;
 
+  @include md {
+    justify-content: unset;
+    align-items: unset;
+  }
+
   .ensome-content-title {
     color: var(--black);
     font-size: var(--heading-two);
     font-weight: 800;
     line-height: var(--leading-xl);
+
+    @include md {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include ms {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include sm {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+    }
   }
 
   .ensome-in-numbers-hr {
@@ -29,6 +64,21 @@
     margin-top: 50px;
     display: flex;
     gap: 100px;
+
+    @include md {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    }
+
+    @include ms {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    @include sm {
+     display: grid;
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 
     .ensome-main-content-numbers {
       display: flex;
