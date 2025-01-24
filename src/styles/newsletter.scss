@@ -1,0 +1,115 @@
+@import "./responsive.scss";
+
+.newsletter-main-container {
+  background-color: var(--primary-dark-blue);
+  border-bottom: 2px solid var(--helper-dark-blue);
+}
+
+.newsletter-content-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 60px;
+    justify-content: start;
+  }
+
+  @include ms {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 50px;
+  }
+
+  @include sm {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+  }
+}
+
+.newsletter-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .newsletter-title {
+    color: var(--white);
+    font-size: var(--heading-two);
+    font-weight: 800;
+    line-height: var(--leading-xl);
+
+    @include md {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include ms {
+      font-size: var(--heading-three);
+      line-height: var(--leading-mds);
+    }
+
+    @include sm {
+      font-size: var(--heading-four);
+      line-height: var(--leading-md);
+      }
+  }
+
+  .newsletter-description {
+    color: var(--white);
+    font-size: var(--heading-five);
+    line-height: var(--leading-ml);
+    font-weight: 400;
+  }
+}
+
+.newsletter-input {
+  width: 320px;
+  height: 54px;
+  padding-left: 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+  background-color: var(--helper-light-blue);
+
+  @include sm {
+    width: 280px;
+  }
+}
+
+.newsletter-input::placeholder {
+  color: var(--black);
+  font-weight: 800;
+  font-size: var(--medium);
+}
+
+.newsletter-input:focus-within {
+  border: none;
+  outline: none;
+}
+
+.newsletter-send-button {
+  position: absolute;
+  width: 125px;
+  height: 54px;
+  outline: none;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  font-size: var(--large);
+  cursor: pointer;
+}
+
+.newsletter-send-button:hover {
+  background-color: rgb(243, 243, 243);
+}

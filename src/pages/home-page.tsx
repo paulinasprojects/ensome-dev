@@ -2,6 +2,7 @@ import Cta from "@/components/cta"
 import EnsomeBenefits from "@/components/ensome-benefits"
 import EnsomeInNumber from "@/components/ensome-in-numbers"
 import MainHero from "@/components/main-hero"
+import Newsletter from "@/components/newsletter"
 import OurClients from "@/components/our-clients"
 import OurPricing from "@/components/our-pricing"
 import TopHero from "@/components/top-hero"
@@ -18,6 +19,7 @@ const HomePage = () => {
       <OurPricing/>
       <OurClients/>
       <Cta/>
+      <Newsletter/>
     </>
   )
 }
