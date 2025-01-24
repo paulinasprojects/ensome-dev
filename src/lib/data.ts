@@ -127,3 +127,57 @@ export const ourClientsData = [
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712687/logo_6_qxpqi3.png",
   },
 ];
+
+export const footerQuickLinks = [
+  {
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: "Solutions",
+    href: "/solutions",
+  },
+  {
+    title: "Contact",
+    href: "/contact-us",
+  },
+  {
+    title: "Our team",
+    href: "/our-team",
+  },
+  {
+    title: "About Us",
+    href: "/about-us",
+  },
+  {
+    title: "Services",
+    href: "/services",
+  },
+  {
+    title: "FAQ",
+    href: "/faq",
+  },
+];
+
+export const footerServiceLinks = [
+  {
+    tile: "Pages",
+    href: "/pages",
+  },
+  {
+    tile: "Elements",
+    href: "/pages",
+  },
+  {
+    tile: "FAQ",
+    href: "/service-faq",
+  },
+  {
+    tile: "Pricing",
+    href: "/pricing",
+  },
+  {
+    tile: "Site map",
+    href: "/site-map",
+  },
+];

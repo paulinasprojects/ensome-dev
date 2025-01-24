@@ -1,5 +1,14 @@
 @import "./responsive.scss";
 
 .footer-main-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--primary-dark-blue);
+}
+
+.footer-flex-container {
+  display: flex;
+  gap: 190px;
+  // align-items: center;
+  justify-content: center;
 }

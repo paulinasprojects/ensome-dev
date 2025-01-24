@@ -1,0 +1,20 @@
+@import "./responsive.scss";
+
+.quick-link-title  {
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--large);
+}
+
+.quick-links-container {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-quck-link {
+  color: var(--grey);
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+}

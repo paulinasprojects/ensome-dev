@@ -1,0 +1,21 @@
+@import "./responsive.scss";
+
+.footer-contact-info-title {
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--large);
+}
+
+.footer-contact-info-container {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact-info-link {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: var(--medium);
+  line-height: var(--leading-sm);  
+}
