@@ -1,0 +1,87 @@
+@import "./responsive.scss";
+ 
+.cta-form-content-container{
+  display: flex;
+  gap: 30px;
+}
+
+.cta-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5px;
+}
+
+.cta-form-label {
+  color: var(--grey);
+  font-size: var(--small);
+  line-height: var(--leading-sm);   
+}
+
+.cta-form-input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+}
+
+.cta-form-input:focus-within {
+  outline: none;
+}
+
+.cta-form-subject-input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+}
+
+.cta-form-subject-input:focus-within {
+  outline: none;
+}
+
+.cta-form-subject-input:focus-within {
+  outline: none;
+}
+
+.cta-form-subject-container {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5.5px;
+}
+
+.cta-form-message-container {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5.5px;
+
+  .cta-form-message-input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    resize: none;
+  }
+
+  .cta-form-message-input:focus-within {
+    outline: none;
+  }
+  
+}
+
+
+.cta-button {
+  margin-top: 35px;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 15px 50px;
+  border: none;
+  outline: none;
+}
+
+.cta-button:hover {
+  background-color: transparent;
+  outline: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+}

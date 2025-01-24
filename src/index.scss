@@ -139,3 +139,9 @@ input[type=number] {
 .gap25 {
   gap: 25px;
 }
+
+.error-message {
+  color: red;
+  font-size: var(--small);
+  margin-top: 5px;
+}
