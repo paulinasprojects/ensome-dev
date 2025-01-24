@@ -1,0 +1,54 @@
+@import "./responsive.scss";
+
+.pricing-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  
+  @include sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .our-pricing-title {
+    color: var(--black);
+    font-size: var(--heading-two);
+    font-weight: 800;
+    line-height: var(--leading-xl);
+
+    @include md {
+      font-size: var(--heading-four);
+      line-height: var(--leading-md);
+    }
+  }
+  .our-pricing-hr {
+    margin-top: 5px;
+    width: 95px;
+    height: 4px;
+    background-color: var(--primary-blue);
+  }
+
+}
+
+.pricing-tab-container {
+  display: flex;
+}
+
+.pricing-content {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

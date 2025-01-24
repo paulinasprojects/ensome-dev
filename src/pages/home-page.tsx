@@ -1,6 +1,7 @@
 import EnsomeBenefits from "@/components/ensome-benefits"
 import EnsomeInNumber from "@/components/ensome-in-numbers"
 import MainHero from "@/components/main-hero"
+import OurPricing from "@/components/our-pricing"
 import TopHero from "@/components/top-hero"
 import WhatOurCustomersSay from "@/components/what-our-customers-say"
 
@@ -12,6 +13,7 @@ const HomePage = () => {
       <EnsomeInNumber/>
       <EnsomeBenefits/>
       <WhatOurCustomersSay/>
+      <OurPricing/>
     </>
   )
 }

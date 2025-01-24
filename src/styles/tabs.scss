@@ -1,0 +1,31 @@
+@import "./responsive.scss";
+
+.is-active {
+  width: 125px;
+  height: 46px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-container {
+ width: 125px;
+ height: 46px;
+ background-color: var(--primary-light-blue);
+ color: var(--black);
+ font-size: var(--medium);
+ line-height: var(--leading-sm);
+ font-weight: medium; 
+ cursor: pointer;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
