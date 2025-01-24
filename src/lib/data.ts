@@ -94,3 +94,36 @@ export const YearlyPricingData = [
     ],
   },
 ];
+
+export const ourClientsData = [
+  {
+    id: 7,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712565/logo_1_pstg5q.png",
+  },
+  {
+    id: 8,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712588/logo_2_pcyfe3.png",
+  },
+  {
+    id: 9,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712605/logo_3_htkm1y.png",
+  },
+  {
+    id: 10,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712630/logo_4_wmtgva.png",
+  },
+  {
+    id: 11,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712671/logo_5_nyksan.png",
+  },
+  {
+    id: 12,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1737712687/logo_6_qxpqi3.png",
+  },
+];
