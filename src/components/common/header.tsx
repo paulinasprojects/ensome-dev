@@ -21,11 +21,11 @@ const Header = () => {
       </div>
       <div className="header-link-container">
         <Link to="/" className="header-link">Home</Link>
-        <Link to="/" className="header-link">Solutions</Link>
-        <Link to="/" className="header-link">Pages</Link>
-        <Link to="/" className="header-link">Elements</Link>
-        <Link to="/" className="header-link">Blog</Link>
-        <Link to="/" className="header-link">Contact</Link>
+        <Link to="/solutions" className="header-link">Solutions</Link>
+        <Link to="/services" className="header-link">Services</Link>
+        <Link to="/about-us" className="header-link">About</Link>
+        <Link to="/our-team" className="header-link">Team</Link>
+        <Link to="/contact-us" className="header-link">Contact</Link>
       </div>
         <button className="header-button">
           <IoPlayCircleOutline className="header-play-icon"/>

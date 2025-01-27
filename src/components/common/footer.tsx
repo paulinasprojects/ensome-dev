@@ -5,7 +5,7 @@ import FooterTerms from "../footer-terms"
 
 const Footer = () => {
   return (
-    <div className="footer-main-container">
+    <footer className="footer-main-container">
       <div className="footer-flex-container">
         {/* Left */}
         <FooterSocials/>
@@ -13,7 +13,7 @@ const Footer = () => {
         <FooterLinks/>
       </div>
       <FooterTerms/>
-    </div>
+    </footer>
   )
 }
 

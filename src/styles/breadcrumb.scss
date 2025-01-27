@@ -1,0 +1,35 @@
+@import "./responsive.scss";
+
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  
+  .breadcrumb-home {
+    color: var(--grey);
+    font-size: var(--medium);
+    font-weight: 500;
+    line-height: var(--leading-sm);
+  }
+
+  .breadcrumb-home:hover {
+    color: var(--white);
+  }
+
+  .breadcrumb-divider {
+    color: var(--grey);
+    width: 20px;
+    height: 20px;
+  }
+
+  .breadcrumb-title {
+    color: var(--white);
+    font-size: var(--medium);
+    font-weight: 400;
+    line-height: var(--leading-sm);
+  }
+
+  .breadcrumb-title:hover {
+    color: var(--grey);
+  }
+}
