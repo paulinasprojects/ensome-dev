@@ -17,6 +17,11 @@
   font-weight: 700;
   line-height: var(--leading-lg);
   color: var(--black);
+
+  @include sm {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+  }
 }
 
 .single-service-content-customer-container > p {
@@ -30,12 +35,20 @@
   height: 290px;
   object-fit: cover;
   border-radius: 6px;
+
+  @include sm {
+    width: 350px;
+  }
 }
 
 .single-service-content-solution-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @include sm {
+    align-items: start;
+  }
 }
 
 .single-service-content-solution-container > span {
@@ -43,6 +56,11 @@
   font-weight: 700;
   line-height: var(--leading-lg);
   color: var(--black);
+
+  @include sm {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+  }
 }
 
 .single-service-content-solution-container > p {
@@ -57,6 +75,11 @@
   display: flex;
   align-items: center;
   gap: 34px;
+
+  @include sm {
+    align-items: start;
+    flex-direction: column;
+  }
 
   .single-service-solutions-content{
     display: flex;
