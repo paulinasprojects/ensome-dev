@@ -1,0 +1,10 @@
+@import "./responsive.scss";
+
+.single-main-service-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--background);
+  display: flex;
+  padding-left: 130px;
+  gap: 30px;
+}
