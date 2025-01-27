@@ -4,10 +4,16 @@ import { IoMdPin } from "react-icons/io";
 
 import CtaForm from "./cta-form";
 import "@/styles/cta.scss";
+import classNames from "@/lib/utils";
 
-const Cta = () => {
+interface CTAProps {
+  className?: string | undefined;
+  isServicesPage?: boolean;
+}
+
+const Cta = ({ className, isServicesPage }: CTAProps) => {
   return (
-    <div className="cta-main-container">
+    <div className={classNames(isServicesPage ? className : "cta-main-container")}>
       <div className="cta-content-container">
         <div className="cta-contact-us-container">
           <div>

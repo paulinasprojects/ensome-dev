@@ -22,6 +22,8 @@
 
   @include sm {
     grid-template-columns: repeat(1, minmax(0, 420px));
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

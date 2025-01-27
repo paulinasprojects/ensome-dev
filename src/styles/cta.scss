@@ -4,12 +4,23 @@
   background-color: var(--background);
 }
 
+.service-background {
+  background-color: var(--white);
+}
+
+
 .cta-content-container {
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
   justify-content: center;
   gap: 125px;
+
+  @include md {
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: unset;
+  }
 
   @include ms {
     padding-left: 20px;

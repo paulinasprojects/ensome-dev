@@ -13,6 +13,8 @@
     padding-bottom: 120px;
 
     @include md {
+      justify-content: center;
+      align-items: start;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -55,6 +57,7 @@
      }
 
      .main-hero-top-title br {
+
       @include md {
         display: none;
       }
@@ -75,6 +78,13 @@
       line-height: var(--leading-ml);
       font-weight: normal;
      }
+
+     .main-hero-top-description br {
+      @include ms {
+        display: none;
+      }
+     }
+
      .main-hero-top-button {
       background-color: var(--primary-blue);
       color: var(--white);
@@ -96,6 +106,10 @@
      }
     }
     .main-hero-top-image {
+      @include ms {
+        width: 650px;
+      }
+      
       @include sm {
         width: 350px;
       }
@@ -124,6 +138,10 @@
       }
 
       .main-hero-bottom-image {
+        @include ms {
+          width: 650px;
+        }
+
         @include sm {
           width: 350px;
         }
@@ -171,6 +189,12 @@
         font-size: var(--heading-five);
         line-height: var(--leading-ml);
         font-weight: normal;
+      }
+
+      .main-hero-bottom-description br {
+        @include ms {
+          display: none;
+        }
       }
 
       .main-hero-bottom-button {
