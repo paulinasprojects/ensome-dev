@@ -1,3 +1,12 @@
+import {
+  BrainIsometric,
+  ChartIsometric,
+  KeyIsometric,
+  DataIsometric,
+  PieChartIsometric,
+  BotIconIsometric,
+} from "@/components/common/icons";
+
 export const TestimonialsData = [
   {
     id: 1,
@@ -179,5 +188,50 @@ export const footerServiceLinks = [
   {
     tile: "Site map",
     href: "/site-map",
+  },
+];
+
+export const servicesData = [
+  {
+    id: 1,
+    icon: BrainIsometric,
+    title: "Machine Learning",
+    description:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+  },
+  {
+    id: 2,
+    icon: ChartIsometric,
+    title: "Embed analytics",
+    description:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+  },
+  {
+    id: 3,
+    icon: KeyIsometric,
+    title: "Access Control",
+    description:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+  },
+  {
+    id: 4,
+    icon: DataIsometric,
+    title: "Data analytics",
+    description:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+  },
+  {
+    id: 5,
+    icon: PieChartIsometric,
+    title: "Machine Learning",
+    description:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+  },
+  {
+    id: 6,
+    icon: BotIconIsometric,
+    title: "Artificial intelligence",
+    description:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
   },
 ];

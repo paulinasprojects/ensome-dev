@@ -1,0 +1,75 @@
+@import "./responsive.scss";
+
+.main-services-content-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  justify-content: center;
+  gap: 40px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    grid-template-columns: repeat(2, minmax(0, 350px));
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    grid-template-columns: repeat(1, minmax(0, 420px));
+  }
+}
+
+.main-services-main-content-container {
+  padding: 35px;
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+.main-services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .main-services-content-title {
+    font-size: var(--heading-four);
+    line-height: var(--leading-ml);
+    font-weight: bold;
+    color: var(--black);
+  }
+
+  .main-services-content-description {
+    color: var(--grey);
+    font-size: var(--large);
+    line-height: var(--leading-sm);
+    font-weight: 400;
+  }
+
+  .main-services-content-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--primary-blue);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: var(--medium);
+    line-height: var(--leading-sm);
+    font-weight: 700;
+  }
+
+  .main-services-content-button:hover {
+    color: var(--helper-dark-blue);
+  }
+
+  .main-services-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
