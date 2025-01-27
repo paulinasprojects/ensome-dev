@@ -166,7 +166,7 @@ export const footerServiceLinks = [
   },
   {
     tile: "Elements",
-    href: "/pages",
+    href: "/elements",
   },
   {
     tile: "FAQ",

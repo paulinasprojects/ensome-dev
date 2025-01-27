@@ -10,7 +10,7 @@ const FooterServiceLinks = () => {
       <span className="quick-link-title">Service</span>
         <div className="quick-links-container">
           {footerServiceLinks.map((link) => (
-            <Link to={link.href} className="footer-quck-link">{link.tile}</Link>
+            <Link to={link.href} key={link.href} className="footer-quick-link">{link.tile}</Link>
           ))}
       </div>
     </div>

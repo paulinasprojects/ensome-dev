@@ -35,4 +35,12 @@
     width: 14px;
     height: 14px;
   }
+
+  .footer-social-link-icon:hover {
+    color: var(--white);
+  }
+}
+
+.footer-social-link:hover {
+  background-color: var(--helper-dark-light-blue);
 }

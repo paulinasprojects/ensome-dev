@@ -1,0 +1,78 @@
+@import "./responsive.scss";
+
+.footer-terms-main-container {
+  margin-top: 50px;
+
+}
+
+.footer-terms-hr {
+  width: 1110px;
+  border-color: var(--helper-dark-light-blue);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include ms {
+    width: 740px;
+  }
+
+  @include sm {
+    width: 410px;
+  }
+}
+
+.footer-terms-content-container {
+  margin-left: 158px;
+  margin-right: 158px;
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+
+  @include ms {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  @include sm {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}
+
+.footer-terms-content-container > span {
+  color: var(--grey);
+  font-size: var(--medium);
+  font-weight: 400;
+  line-height: var(--leading-sm);
+
+  @include sm {
+    font-size: var(--small);
+  }
+}
+
+.footer-terms-links {
+  display: flex;
+  gap: 85px;
+
+  @include ms {
+    gap: 50px;
+  }
+
+  @include sm {
+    gap: 10px;
+  }
+}
+
+.footer-terms-links > a {
+  color: var(--grey);
+  font-size: var(--medium);
+  font-weight: 400;
+  line-height: var(--leading-sm);
+
+  @include sm {
+    font-size: var(--small);
+  }
+}
+
+.footer-terms-links > a:hover {
+  color: var(--white);
+}

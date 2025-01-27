@@ -4,11 +4,38 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--primary-dark-blue);
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .footer-flex-container {
   display: flex;
   gap: 190px;
-  // align-items: center;
   justify-content: center;
+
+  @include md {
+    gap: 90px;
+  }
+
+  @include ms {
+    gap: 50px;
+  }
+
+  @include sm {
+    gap: 50px;
+    flex-direction: column;
+  }
 }

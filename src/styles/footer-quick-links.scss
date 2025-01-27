@@ -13,8 +13,12 @@
   gap: 12px;
 }
 
-.footer-quck-link {
+.footer-quick-link {
   color: var(--grey);
   font-size: var(--medium);
   line-height: var(--leading-sm);
+}
+
+.footer-quick-link:hover {
+  color: var(--white);
 }

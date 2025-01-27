@@ -41,6 +41,7 @@
       color: var(--white);
 
       @include md {
+        margin-top: 15px;
         font-size: var(--heading-four);
         line-height: var(--leading-md);
       }

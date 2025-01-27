@@ -1,6 +1,7 @@
 import "@/styles/footer.scss"
 import FooterLinks from "../footer-links"
 import FooterSocials from "../footer-socials"
+import FooterTerms from "../footer-terms"
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
         {/* right */}
         <FooterLinks/>
       </div>
+      <FooterTerms/>
     </div>
   )
 }
