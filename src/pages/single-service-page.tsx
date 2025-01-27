@@ -1,6 +1,10 @@
+import SingleServiceTopHero from "@/components/single-service-top-hero"
+
 const SingleServiceDetailsPage = () => {
   return (
-    <div>SingleServiceDetailsPage</div>
+    <div>
+      <SingleServiceTopHero/>
+    </div>
   )
 }
 
