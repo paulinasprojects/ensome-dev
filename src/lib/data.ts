@@ -235,3 +235,26 @@ export const servicesData = [
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
   },
 ];
+
+export const OtherServices = [
+  {
+    id: 1,
+    name: "Machine Learning",
+  },
+  {
+    id: 2,
+    name: "Embeded analytics",
+  },
+  {
+    id: 3,
+    name: "Data analytics",
+  },
+  {
+    id: 4,
+    name: "Big data consulting",
+  },
+  {
+    id: 5,
+    name: "Artificial Intelligence",
+  },
+];

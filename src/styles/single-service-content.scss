@@ -29,7 +29,20 @@
   font-weight: 400;
   font-size: var(--large);
   line-height: var(--leading-mds);
+
+  @include sm {
+    font-size: var(--medium);
+    line-height: var(--leading-sm);
+  }
 }
+
+.single-service-content-customer-container > p > br {
+  @include sm {
+    display: none;
+  }
+}
+
+
 .single-service-content-customer-container > img {
   width: 633px;
   height: 290px;
@@ -37,7 +50,8 @@
   border-radius: 6px;
 
   @include sm {
-    width: 350px;
+    width: 400px;
+    height: 160px;
   }
 }
 
@@ -70,6 +84,12 @@
   line-height: var(--leading-mds);
 }
 
+.single-service-content-solution-container > p > br {
+  @include sm {
+    display: none;
+  }
+}
+
 
 .single-service-solutions-image-content-container {
   display: flex;
@@ -85,6 +105,10 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @include sm {
+      order: 1;
+    }
   }
 
   .single-service-solutions-content > span {
@@ -107,4 +131,9 @@
   height: 160px;
   border-radius: 6px;
   object-fit: cover;
+
+  @include sm {
+    order: 2;
+    width: 400px;
+  }
 }

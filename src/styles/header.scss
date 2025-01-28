@@ -14,9 +14,20 @@
     gap: 50px;
   }
 
+  @include sm {
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+  }
+
   .ensome-logo {
     width: 141px;
     height: 46px;
+
+    @include sm {
+      width: 92px;
+      height: 30px;
+    }
   }
 
   .header-link-container {
