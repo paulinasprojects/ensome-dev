@@ -236,7 +236,7 @@ export const servicesData = [
   },
 ];
 
-export const OtherServices = [
+export const OtherServicesData = [
   {
     id: 1,
     name: "Machine Learning",

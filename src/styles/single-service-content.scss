@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @include md {
+    padding-right: 20px;
+  }
 }
 
 .single-service-content-customer-container {
@@ -37,6 +41,11 @@
 }
 
 .single-service-content-customer-container > p > br {
+  @include md {
+    display: none;
+  }
+
+
   @include sm {
     display: none;
   }
@@ -48,6 +57,14 @@
   height: 290px;
   object-fit: cover;
   border-radius: 6px;
+
+  @include md {
+    width: 100%;
+  }
+
+  @include ms {
+    width: 100%;
+  }
 
   @include sm {
     width: 400px;
@@ -85,6 +102,10 @@
 }
 
 .single-service-content-solution-container > p > br {
+  @include md {
+    display: none;
+  }
+
   @include sm {
     display: none;
   }
@@ -95,6 +116,7 @@
   display: flex;
   align-items: center;
   gap: 34px;
+
 
   @include sm {
     align-items: start;
@@ -131,6 +153,14 @@
   height: 160px;
   border-radius: 6px;
   object-fit: cover;
+
+  @include md {
+    width: 70%;
+  }
+
+  @include ms {
+    width: 60%;
+  }
 
   @include sm {
     order: 2;

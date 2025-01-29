@@ -1,0 +1,105 @@
+@import "./responsive.scss";
+
+.other-services-input-container {
+  @include md {
+    display: none;
+  }
+
+  @include ms {
+    display: none;
+  }
+
+  @include sm {
+    display: none;
+  }
+}  
+
+.other-services-input-container input {
+  width: 320px;
+  height: 54px;
+  padding-left: 10px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+
+  @include sm {
+    width: 224px;
+  }
+}
+
+.other-services-input-container input::placeholder {
+  color: var(--grey);
+  font-weight: 800;
+  font-size: var(--medium);
+}
+
+.other-services-input-container input:focus-within {
+  border: 1px solid #dbdcde;
+  outline: none;
+}
+
+.other-services-input-container button {
+  position: absolute;
+  width: 125px;
+  height: 54px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--large);
+  cursor: pointer;
+}
+
+.other-services-input-container button:hover {
+  background-color: #467dff;
+  outline: 1px solid var(--primary-blue);
+}
+
+.other-services-main-title-container {
+  margin-top: 60px;
+}
+
+.other-services-main-title {
+  color: var(--black);
+  font-weight: bold;
+  font-size: var(--heading-four);
+  line-height: var(--leading-ml);
+}
+
+.other-services-link-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include md {
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-right: 20px;
+  }
+
+  .other-services-link {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 268px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey);
+    font-weight: 400;
+    color: var(--black);
+    font-size: var(--heading-five);
+
+    @include sm {
+      gap: 0px;
+    }
+  }
+
+  .other-services-link-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
