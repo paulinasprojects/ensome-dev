@@ -1,0 +1,114 @@
+@import "./responsive.scss";
+
+.about-ensome-main-container {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-color: var(--background);
+
+  @include md {
+    padding-top: 60px;
+  }
+}
+
+.about-ensome-main-content-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+  gap: 50px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+}
+
+.about-ensome-main-content-container > span {
+  font-size: var(--heading-two);
+  font-weight: 800;
+  line-height: var(--leading-xl);
+
+  @include sm {
+    font-size: var(--heading-three);
+    line-height: var(--leading-lg);
+
+  }
+}
+
+.about-ensome-main-content-container > span > hr {
+  margin-top: 15px;
+  width: 95px;
+  height: 1px;
+  border-color: var(--primary-blue);
+} 
+
+.about-ensome-main-content-container > img {
+  width: 1110px;
+  height: 500px;
+  border-radius: 6px;
+  object-fit: cover;
+  
+  @include md {
+    width: 100%;
+  }
+
+  @include ms {
+    width: 680px;
+  }
+
+  @include sm {
+    width: 380px;
+    height: 180px;
+  }
+}
+
+.about-ensome-content {
+  display: flex;
+  gap: 60px;
+
+  @include ms {
+    gap: 30px;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.about-ensome-content > span {
+  color: var(--grey);
+  font-size: var(--heading-five);
+  line-height: var(--leading-ml);
+
+  @include md {
+    font-size: var(--xl);
+    line-height: var(--leading-sm);
+  }
+
+  @include ms {
+    font-size: var(--medium);
+    line-height: var(--leading-sm);
+  }
+}
+
+.about-ensome-content > span > br {
+  @include sm {
+    display: none;
+  }
+}
+
+.about-ensome-logos {
+  filter: opacity(25%);
+}
+
+.about-ensome-image-container {
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  @include sm {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

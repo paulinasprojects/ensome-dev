@@ -137,6 +137,39 @@ export const ourClientsData = [
   },
 ];
 
+export const ourClientsDarkData = [
+  {
+    id: 7,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738141134/logo_1_1_lbl2d1.png",
+  },
+  {
+    id: 8,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738141162/logo_2_1_vwb8oo.png",
+  },
+  {
+    id: 9,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738140999/logo_3_1_vid6ks.png",
+  },
+  {
+    id: 10,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738141184/logo_4_1_uoxeft.png",
+  },
+  {
+    id: 11,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738141207/logo_5_1_wadb8h.png",
+  },
+  {
+    id: 12,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738141231/logo_6_1_yuaxil.png",
+  },
+];
+
 export const footerQuickLinks = [
   {
     title: "Home",
