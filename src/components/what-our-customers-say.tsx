@@ -1,6 +1,6 @@
 import { TestimonialsData } from "@/lib/data";
 import "@/styles/what-our-customers-say.scss";
-import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
+// import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import TestimonialCard from "./testimonial-card";
 
 
@@ -13,14 +13,14 @@ const WhatOurCustomersSay = () => {
               <p className="customers-says-main-content-title">What our customers say</p>
               <hr className="customers-says-hr" />
           </div>
-          <div className="customers-say-button-container">
+          {/* <div className="customers-say-button-container">
             <button className="customers-say-button">
               <HiArrowLongLeft className="customers-says-arrow-icon"/>
             </button>
             <button className="customers-say-button">
               <HiArrowLongRight className="customers-says-arrow-icon"/>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Testimonial Data Here */}

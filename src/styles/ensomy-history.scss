@@ -1,0 +1,57 @@
+@import "./responsive.scss";
+
+.ensome-history-main-container {
+  background-color: var(--background);
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include ms {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.ensome-history-title-container {
+  padding-left: 120px;
+
+  @include md {
+    padding-left: 20px;
+  }
+
+  @include ms {
+    padding-left: 20px;
+  }
+
+  @include sm {
+    padding-left: 20px;
+  }
+}
+
+.ensome-history-title-container > span {
+  font-size: var(--heading-two);
+  font-weight: 800;
+  line-height: var(--leading-xl);
+
+  @include sm {
+    font-size: var(--heading-three);
+    line-height: var(--leading-lg);
+
+  }
+}
+
+.ensome-history-title-container > hr {
+  margin-top: 5px;
+  width: 95px;
+  height: 4px;
+  background-color: var(--primary-blue);
+}

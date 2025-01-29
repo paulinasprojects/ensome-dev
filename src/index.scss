@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "@/styles/responsive.scss";
 
 :root {
   /* Primary */
@@ -144,4 +145,44 @@ input[type=number] {
   color: red;
   font-size: var(--small);
   margin-top: 5px;
+}
+
+.history-carousel {
+  width: 100%;
+  padding-left: 100px;
+
+  @include md {
+    padding-left: 0px;
+  }
+}
+
+.carousel-slide {
+  padding: 20px;
+  background-color: var(--background);
+  border-radius: 8px;
+}
+
+.carousel-slide h2 {
+  margin-bottom: 15px;
+  font-size: var(--heading-four);
+  font-weight: bold;
+  line-height: var(--leading-ml);
+  color: var(--black);
+}
+
+.carousel-slide p {
+  font-size: var(--large);
+  font-weight: 400;
+  color: var(--grey);
+  line-height: var(--leading-mds);
+
+  @include ms {
+    font-size: var(--medium);
+    line-height: var(--leading-sm);
+  }
+
+  @include sm {
+    font-size: var(--medium);
+    line-height: var(--leading-sm);
+  }
 }

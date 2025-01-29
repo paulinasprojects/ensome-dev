@@ -291,3 +291,30 @@ export const OtherServicesData = [
     name: "Artificial Intelligence",
   },
 ];
+
+export const historySections = [
+  {
+    id: 1,
+    title: "Ensome Foundation",
+    content:
+      "Sed ut perspiciatis unde omnis lite natus error sit voluptatem accusantium doloremque laudantium, totam rem apertam, eaque ipsa quaeab lib inventore. Donec tincidunt tempor.",
+  },
+  {
+    id: 1,
+    title: "Research & Development",
+    content:
+      "Sed ut perspiciatis unde omnis lite natus error sit voluptatem accusantium doloremque laudantium, totam rem apertam, eaque ipsa quaeab lib inventore. Donec tincidunt tempor.",
+  },
+  {
+    id: 1,
+    title: "New Vertical Markets",
+    content:
+      "Sed ut perspiciatis unde omnis lite natus error sit voluptatem accusantium doloremque laudantium, totam rem apertam, eaque ipsa quaeab lib inventore. Donec tincidunt tempor.",
+  },
+  {
+    id: 1,
+    title: "Stellar Growth",
+    content:
+      "Sed ut perspiciatis unde omnis lite natus error sit voluptatem accusantium doloremque laudantium, totam rem apertam, eaque ipsa quaeab lib inventore. Donec tincidunt tempor.",
+  },
+];
