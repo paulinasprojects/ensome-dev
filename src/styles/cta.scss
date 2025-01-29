@@ -12,8 +12,8 @@
 .cta-content-container {
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-left: 160px;
   display: flex;
-  justify-content: center;
   gap: 125px;
 
   @include md {
