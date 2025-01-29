@@ -318,3 +318,26 @@ export const historySections = [
       "Sed ut perspiciatis unde omnis lite natus error sit voluptatem accusantium doloremque laudantium, totam rem apertam, eaque ipsa quaeab lib inventore. Donec tincidunt tempor.",
   },
 ];
+
+export const ourAchievementsData = [
+  {
+    id: 1,
+    number: "1830+",
+    title: "Projects executed",
+  },
+  {
+    id: 2,
+    number: 220,
+    title: "Data analysed",
+  },
+  {
+    id: 3,
+    number: 390,
+    title: "Data managed",
+  },
+  {
+    id: 4,
+    number: "834+",
+    title: "Satisfied customers",
+  },
+];
