@@ -186,3 +186,22 @@ input[type=number] {
     line-height: var(--leading-sm);
   }
 }
+
+.title-heading-container > span {
+  font-size: var(--heading-two);
+  font-weight: 800;
+  line-height: var(--leading-xl);
+
+  @include sm {
+    font-size: var(--heading-three);
+    line-height: var(--leading-lg);
+
+  }
+}
+
+.title-heading-container > hr {
+  margin-top: 5px;
+  width: 95px;
+  height: 4px;
+  background-color: var(--primary-blue);
+}
