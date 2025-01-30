@@ -1,10 +1,16 @@
 import SingleMainService from "@/components/single-main-service"
-import SingleServiceTopHero from "@/components/single-service-top-hero"
+import TopHeroWithBreadcrumb from "@/components/top-hero-with-breadcrumb"
 
 const SingleServiceDetailsPage = () => {
   return (
     <div>
-      <SingleServiceTopHero/>
+      {/* <SingleServiceTopHero/> */}
+      <TopHeroWithBreadcrumb
+        breadcrumbHref="/services/1"
+        breadcrumbTitle="Access Control"
+        topHeroTitle="Access control"
+        topHeroDescription="Here you can find more about the specific service that we provide"
+      />
       <SingleMainService/>
     </div>
   )

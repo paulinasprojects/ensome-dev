@@ -1,0 +1,76 @@
+@import "./responsive.scss";
+
+.top-hero-with-breadcrumb-container {
+  background-color: var(--primary-dark-blue);
+  padding-top: 40px;
+  padding-bottom: 90px;
+  display: flex;
+  gap: 129px;
+  flex-direction: column;
+  padding-left: 160px;
+
+  @include md {
+    gap: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    gap: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    gap: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 35px;
+  }
+}
+
+.top-hero-with-breadcrumb-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 80px;
+
+  @include ms {
+    padding-right: 0;
+  }
+
+  @include sm {
+    gap: 15px;
+    padding-right: 0;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+.top-hero-with-breadcrumb-title-container > h1 {
+  color: var(--white);
+  font-size: var(--heading-one);
+  font-weight: 800;
+  line-height: var(--leading-xxl);
+
+  @include ms {
+    font-size: var(--heading-three);
+    line-height: var(--leading-md);
+  }
+
+  @include sm {
+    font-size: var(--heading-three);
+    line-height: var(--leading-lg);
+  }
+}
+
+.top-hero-with-breadcrumb-title-container > p {
+  color: var(--white);
+  font-weight: 400;
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+
+  @include sm {
+    display: none;
+  }
+}

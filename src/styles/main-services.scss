@@ -21,7 +21,7 @@
   }
 
   @include sm {
-    grid-template-columns: repeat(1, minmax(0, 420px));
+    grid-template-columns: repeat(1, minmax(0, 390px));
     padding-left: 10px;
     padding-right: 10px;
   }

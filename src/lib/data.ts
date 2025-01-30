@@ -5,6 +5,9 @@ import {
   DataIsometric,
   PieChartIsometric,
   BotIconIsometric,
+  BookDatabase,
+  DataBar,
+  ClipboardDataBar,
 } from "@/components/common/icons";
 
 import { v4 as uuidv4 } from "uuid";
@@ -341,5 +344,40 @@ export const ourAchievementsData = [
     id: uuidv4(),
     number: "834+",
     title: "Satisfied customers",
+  },
+];
+
+export const SolutionsData = [
+  {
+    id: uuidv4(),
+    icon: BookDatabase,
+    title: "Data Integration",
+    items: [
+      "Extract, transform, load (ETL)",
+      "Extract, load, transform (ELT)",
+      "Data governance",
+    ],
+  },
+  {
+    id: uuidv4(),
+    icon: DataBar,
+    title: "Data science",
+    items: [
+      "Data preparation",
+      "Data management",
+      "Machine learning (ML)",
+      "Data governance",
+    ],
+  },
+  {
+    id: uuidv4(),
+    icon: ClipboardDataBar,
+    title: "Data integration",
+    items: [
+      "Setup and support",
+      "Quality management",
+      "Security management",
+      "Big data capture & analytics",
+    ],
   },
 ];
