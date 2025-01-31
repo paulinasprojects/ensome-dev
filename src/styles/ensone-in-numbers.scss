@@ -23,12 +23,10 @@
 .ensome-main-content-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-left: 120px;
 
   @include md {
-    justify-content: unset;
-    align-items: unset;
+    padding-left: 20px;
   }
 
   .ensome-content-title {

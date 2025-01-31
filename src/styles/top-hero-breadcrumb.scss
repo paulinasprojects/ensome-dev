@@ -30,9 +30,9 @@
 }
 
 .top-hero-with-breadcrumb-title-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  justify-content: space-between;
   padding-right: 80px;
 
   @include ms {

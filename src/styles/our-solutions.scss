@@ -1,0 +1,15 @@
+@import "./responsive.scss";
+
+.our-solutions-main-container {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    padding-top: 50px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+  }
+}

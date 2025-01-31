@@ -1,0 +1,155 @@
+@import "./responsive.scss";
+
+.providing-years-main-container {
+  padding-left: 140px;
+
+  @include md {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.providing-years-content-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-right: 80px;
+
+  @include md {
+    padding-right: 0;
+  }
+  
+  @include ms {
+    padding-right: 0;
+  }
+  @include sm {
+    gap: 20px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-right: 0;
+  }
+}
+
+.providing-years-main-container-container {
+  display: flex;
+  flex-direction: column;
+
+  .providing-years-number {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 90px;
+    font-weight: 800;
+    color: var(--primary-blue);
+  }
+
+  .providing-years-text {
+    font-size: var(--small);
+    color: var(--black);
+    font-weight: 400;
+  }
+  
+  .providing-years-descr {
+    font-size: var(--heading-two);
+    font-weight: 800;
+    line-height: var(--leading-xl);
+    color: var(--grey);
+
+    @include ms {
+      font-size: var(--heading-four);
+      line-height: var(--leading-md);
+    }
+    @include sm {
+      font-size: var(--heading-four);
+      line-height: var(--leading-md);
+    }
+  }
+}
+
+.providing-years-technology-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.providing-years-technology-container > span {
+  font-size: var(--heading-four);
+  font-weight: bold;
+  color: var(--black);
+  line-height: var(--leading-ml);
+}
+.providing-years-technology-container > p {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: var(--heading-five);
+
+  @include sm {
+    font-size: var(--large);
+  }
+}
+
+.providing-years-main-button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 26px;
+}
+
+.providing-years-see-pricing-button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-radius: 6px;
+  width: 190px;
+  height: 54px;
+  cursor: pointer;
+  font-size: var(--large);
+  line-height: var(--leading-sm);
+  font-weight: bold;
+
+  @include ms {
+    width: 120px;
+  }
+
+  @include sm {
+    width: 120px;
+  }
+}
+
+.providing-years-see-pricing-button:hover {
+  background-color: #467dff;
+}
+
+.providing-years-contact-us-button {
+  border: none;
+  outline: 1px solid var(--primary-blue);
+  width: 190px;
+  height: 54px;
+  color: var(--primary-blue);
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: var(--large);
+  line-height: var(--leading-sm);
+  font-weight: bold;
+
+  @include ms {
+    width: 120px;
+  }
+  @include sm {
+    width: 120px;
+  }
+}
+
+.providing-years-contact-us-button:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
