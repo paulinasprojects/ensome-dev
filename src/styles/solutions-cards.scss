@@ -7,13 +7,13 @@
   @include md {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   @include ms {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   @include sm {
@@ -21,4 +21,82 @@
     padding-right: 20px;
     padding-top: 50px;
   }
+}
+
+.solutions-cards-title-container {
+  @include ms {
+    padding-left: 20px;
+  }
+}
+
+.solutions-cards-main-content-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  gap: 30px;
+
+  @include ms {
+    grid-template-columns: repeat(2, minmax(0, 350px));
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include sm {
+    grid-template-columns: repeat(1, minmax(0, 390px));
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.solutions-cards-card {
+  background-color: var(--primary-light-blue);
+  border-radius: 6px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  .solutions-card-title {
+    font-size: var(--heading-four);
+    font-weight: bold;
+    color: var(--black);
+    line-height: var(--leading-ml);
+  }
+
+  .solutions-card-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .solutions-card-item {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--black);
+      font-weight: 400;
+      font-size: var(--large);
+    }
+  }
+}
+
+.solutions-card-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primary-blue);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+  font-weight: 700;
+}
+
+.solutions-card-button:hover {
+  color: var(--helper-dark-blue);
+}
+
+.solutions-card-button-icon {
+  width: 20px;
+  height: 20px;
 }

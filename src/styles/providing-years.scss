@@ -23,18 +23,22 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding-right: 80px;
+  align-items: center;
 
   @include md {
     padding-right: 0;
+    align-items: unset;
   }
   
   @include ms {
     padding-right: 0;
+    align-items: unset;
   }
   @include sm {
     gap: 20px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     padding-right: 0;
+    align-items: unset;
   }
 }
 
