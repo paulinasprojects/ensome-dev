@@ -22,17 +22,20 @@
 }
 
 .what-our-customers-say-main-content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-left: 170px;
+
+  @include md {
+    padding-left: 0px;
+  }
+  @include ms {
+    padding-left: 0px;
+  }
+  @include sm {
+    padding-left: 0px;
+  }
 }
 
 .what-our-customers-say-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   .customers-says-main-content-title {
     color: var(--black);
     font-size: var(--heading-two);
@@ -60,40 +63,6 @@
     width: 95px;
     height: 4px;
     background-color: var(--primary-blue);
-  }
-
-  .customers-say-button-container {
-    display: flex;
-    gap: 15px;
-    margin-left: 400px;
-
-    @include ms {
-      margin-left: 120px;
-    }
-
-    @include sm {
-      margin-left: 50px;
-    }
-  }
-
-  .customers-say-button {
-    width: 110px;
-    height: 60px;
-    background-color: var(--helper-light-blue);
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    @include sm {
-      width: 80px;
-    }
-
-    .customers-says-arrow-icon {
-      width: 30px;
-      height: 30px;
-      color: var(--helper-dark-blue);
-    }
   }
 }
 

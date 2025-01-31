@@ -2,6 +2,7 @@ import "@/styles/our-solutions.scss";
 import ProvidingYears from "./providing-years";
 import SolutionsCards from "./solutions-cards";
 import EnsomeInNumber from "./ensome-in-numbers";
+import WhatOurCustomersSay from "./what-our-customers-say";
 
 const OurSolutions = () => {
   return (
@@ -9,6 +10,7 @@ const OurSolutions = () => {
       <ProvidingYears/>
       <SolutionsCards/>
       <EnsomeInNumber/>
+      <WhatOurCustomersSay/>
     </div>
   )
 }
