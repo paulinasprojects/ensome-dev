@@ -1,0 +1,80 @@
+@import "./responsive.scss";
+
+.our-team-main-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 120px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.our-team-image-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  gap: 30px;
+
+  @include md {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include ms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include sm {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .our-team-member-image {
+    @include md {
+      width: 450px;
+    }
+
+    @include ms {
+      width: 350px;
+    }
+
+    @include sm {
+      width: 370px;
+    }
+  }
+}
+
+.our-team-member-container {
+  position: relative;
+}
+
+.our-team-member-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 24px;
+  left: 25px;
+}
+
+.our-team-member-name {
+  color: var(--white);
+  font-size: var(--heading-five);
+  font-weight: bold;
+  line-height: var(--leading-md);
+}
+
+.our-team-member-role {
+  color: var(--white);
+  font-size: var(--large);
+  line-height: var(--leading-mds);
+}
+

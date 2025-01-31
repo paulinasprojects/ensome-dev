@@ -381,3 +381,69 @@ export const SolutionsData = [
     ],
   },
 ];
+
+export const OurTeamData = [
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321683/001_img_person_1_kqqm5h.png",
+    title: "Sargis Grigor",
+    role: "Data analyst",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321731/002_img_person_2_tq5ucc.png",
+    title: "Bagrat Leo",
+    role: "Data engineer",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321768/003_img_person_3_ostqmu.png",
+    title: "Gor Sargis",
+    role: "Data analyst",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321797/00_img_person_4_fhfzmj.png",
+    title: "Maral Mari",
+    role: "Data analyst",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321824/008_img_person_8_ersggd.png",
+    title: "Hakob Jirair",
+    role: "Data engineer",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321868/005_img_person_5_ollmmo.png",
+    title: "Eva Vosgi",
+    role: "Data scientist",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321896/007_img_person_7_zc2c05.png",
+    title: "Kohar Marine",
+    role: "Data scientist",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321927/009_img_person_9_qiodth.png",
+    title: "Ararat Ohannes",
+    role: "Data analyst",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321958/006_img_person_6_hcpiis.png",
+    title: "Eduard Vosgi",
+    role: "Data scientist",
+  },
+];
