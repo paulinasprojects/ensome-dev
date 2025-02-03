@@ -1,0 +1,36 @@
+@import "./responsive.scss";
+
+.single-solution-top-hero-container {
+  background-color: var(--primary-dark-blue);
+  padding-top: 100px;
+  padding-bottom: 160px;
+  padding-left: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include ms {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 35px;
+  }
+}
+
+.single-solution-top-hero-container > span {
+  color: var(--white);
+  font-size: var(--heading-one);
+  font-weight: 800;
+  line-height: var(--leading-xxl);
+
+  @include sm {
+    font-size: var(--heading-five);
+    line-height: var(--leading-sm);
+  }
+}
