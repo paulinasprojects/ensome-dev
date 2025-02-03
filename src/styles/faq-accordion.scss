@@ -1,0 +1,52 @@
+@import "./responsive.scss";
+
+.faq-accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.faq-accordion-button {
+  width: 825px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--heading-five);
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  @include ms {
+    width: 650px;
+  }
+
+  @include sm {
+    width: 360px;
+    gap: 30px;
+    justify-content: space-between;
+    font-size: var(--medium);
+  }
+}
+
+.faq-accordion-chevron {
+  width: 24px;
+  height: 24px;
+
+  @include ms {
+    width: 20px;
+    height: 20px;
+  }
+  @include sm {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+.faq-accordion-content {
+  font-size: var(--heading-five);
+  font-weight: 400;
+  color: var(--grey);
+  line-height: var(--leading-ml);
+}

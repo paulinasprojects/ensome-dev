@@ -1,0 +1,15 @@
+@import "./responsive.scss";
+
+.faq-tab-container {
+  font-size: var(--large);
+  font-weight: 800;
+  color: var(--black);
+  line-height: var(--leading-sm);
+  cursor: pointer;
+}
+
+.faq-tab-hr {
+  width: 30px;
+  height: 2px;
+  border-color: var(--primary-blue);
+}

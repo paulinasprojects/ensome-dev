@@ -447,3 +447,263 @@ export const OurTeamData = [
     role: "Data scientist",
   },
 ];
+
+export const generalAccordionData = [
+  {
+    id: uuidv4(),
+    title: "What are data analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: true,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data mining?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is business intelligence?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is exploratory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is confirmatory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What are predictive analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data visualisation?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+];
+
+export const pricingAccordionData = [
+  {
+    id: uuidv4(),
+    title: "What are data analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: true,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data mining?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is business intelligence?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is exploratory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is confirmatory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What are predictive analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data visualisation?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+];
+
+export const paymentAccordionData = [
+  {
+    id: uuidv4(),
+    title: "What are data analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: true,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data mining?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is business intelligence?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is exploratory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is confirmatory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What are predictive analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data visualisation?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+];
+
+export const refundAccordionData = [
+  {
+    id: uuidv4(),
+    title: "What are data analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: true,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data mining?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is business intelligence?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is exploratory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is confirmatory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What are predictive analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data visualisation?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+];
+
+export const careersAccordionData = [
+  {
+    id: uuidv4(),
+    title: "What are data analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: true,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data mining?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is business intelligence?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is exploratory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is confirmatory data analysis?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What are predictive analytics?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+  {
+    id: uuidv4(),
+    title: "What is data visualisation?",
+    content:
+      "Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus.",
+    defaultOpen: false,
+  },
+];
