@@ -50,7 +50,7 @@ const CtaForm = () => {
                 register={register}
                 name="email"
                 placeholder="example@email.com"
-                error={errors.name}
+                error={errors.email}
                 className="cta-form-input"
               />
           </div>
@@ -77,7 +77,7 @@ const CtaForm = () => {
             register={register}
             name="message"
             placeholder="Your message"
-            error={errors.subject}
+            error={errors.message}
             className="cta-form-message-input"
           />
         <button type="submit" className="cta-button">Send</button>

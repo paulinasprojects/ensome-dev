@@ -1,0 +1,57 @@
+@import "./responsive.scss";
+
+.contact-us-main-container {
+  background-image: url("/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 465px;
+
+  @include ms {
+    height: 100vh;
+  }
+
+  @include sm {
+    height: 100vh;
+  }
+}
+
+.contact-us-content-container {
+  display: flex;
+  padding-left: 120px;
+  justify-content: space-around;
+  padding-right: 60px;
+
+  @include md {
+    padding-left: 20px;
+  }
+
+  @include ms {
+    flex-direction: column;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.contact-us-title-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 80px;
+
+  @include ms {
+    gap: 40px;
+  }
+
+  @include sm {
+    gap: 40px;
+  }
+
+  .contact-us-title {
+    color: var(--black);
+    font-size: var(--heading-one);
+    line-height: var(--leading-xxl);
+    font-weight: 800;
+  }
+}

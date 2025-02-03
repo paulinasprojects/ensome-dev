@@ -1,0 +1,108 @@
+@import "./responsive.scss";
+
+.contact-us-form-main-container{
+  box-shadow: 0px 4px 12px 0px rgba(12, 68, 204, 10%);
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: var(--white);
+  border-radius: 6px;
+
+  @include ms {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  @include sm {
+    margin-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contact-us-form-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .contact-us-form-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5px;
+
+    .contact-us-form-label {
+      color: var(--grey);
+      font-size: var(--small);
+      line-height: var(--leading-sm); 
+    }
+
+    .contact-us-form-input {
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid black;
+      width: 345px;
+
+      @include ms {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 270px;
+      }
+    }
+
+
+    .contact-us-form-input:focus-within {
+      outline: none;
+    }
+
+
+    .contact-us-form-message-input {
+      resize: none;
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid black;
+      resize: none; 
+
+      @include ms {
+        width: 100%;
+      }
+      @include sm {
+        width: 270px
+      }
+    }
+
+    .contact-us-form-message-input:focus-within {
+      outline: none;
+    }
+  }
+
+  .contact-us-form-button-container {
+    margin-top: 83px;
+    margin-left: auto;
+    cursor: pointer;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 15px 50px;
+    border: none;
+    outline: none;
+
+    @include ms {
+      margin-left: unset;
+      width: 100%;
+    }
+  
+    @include sm {
+      margin-top: 35px;
+      width: 100%;
+    }
+  }
+  
+  .contact-us-form-button-container:hover {
+    background-color: #467dff;
+    outline: 1px solid var(--primary-blue);
+  }
+  
+}

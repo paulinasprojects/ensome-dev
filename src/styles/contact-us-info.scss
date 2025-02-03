@@ -1,0 +1,53 @@
+@import "./responsive.scss";
+
+.contact-us-info-main-container {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  padding-left: 60px;
+
+  @include md {
+    padding-top: 120px;
+  }
+
+  @include ms {
+    padding-top: 60px;
+  }
+  @include sm {
+    padding-top: 60px;
+  }
+}
+
+.oontact-us-info-content-container {
+  display: flex;
+  gap: 72px;
+
+  @include ms {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-us-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact-us-info-content > span {
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--large);
+    line-height: var(--leading-sm);
+  }
+
+  .contact-us-info-content > p {
+    color: var(--black);
+    font-weight: 400;
+    line-height: var(--leading-sm);
+    font-size: var(--medium);
+  }
+}

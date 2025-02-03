@@ -1,0 +1,35 @@
+@import "./responsive.scss";
+
+.contact-us-breadcrumb-container {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  .contact-us-breadcrumb-home {
+    color: var(--grey);
+    font-size: var(--medium);
+    font-weight: 500;
+    line-height: var(--leading-sm);
+  }
+
+  .contact-us-breadcrumb-home:hover {
+    color: var(--black);
+  }
+
+  .contact-us-breadcrumb-divider {
+    color: var(--grey);
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-us-breadcrumb-title {
+    color: var(--black);
+    font-size: var(--medium);
+    font-weight: 600;
+    line-height: var(--leading-sm);
+  }
+
+  .contact-us-breadcrumb-title:hover {
+    color: var(--grey);
+  }
+}
