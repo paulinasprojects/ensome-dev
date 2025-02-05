@@ -18,9 +18,18 @@
 }
 
 .cta-form-input {
+  width: 255px;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid black;
+
+  @include ms {
+    width: 350px;
+  }
+
+  @include sm {
+    width: 180px;
+  }
 }
 
 .cta-form-input:focus-within {
@@ -28,9 +37,18 @@
 }
 
 .cta-form-subject-input {
+  width: 540px;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid black;
+
+  @include ms {
+    width: 100%;
+  }
+
+  @include sm {
+    width: 390px;
+  }
 }
 
 .cta-form-subject-input:focus-within {

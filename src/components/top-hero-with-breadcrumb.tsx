@@ -6,14 +6,20 @@ interface Props {
   breadcrumbHref: string;
   topHeroTitle: string;
   topHeroDescription: string;
+  isTeamMemberPage?: boolean;
+  teamMemberTitle?: string;
+  secondHref?: string;
 }
 
-const TopHeroWithBreadcrumb = ({ breadcrumbHref, breadcrumbTitle, topHeroDescription, topHeroTitle  }: Props) => {
+const TopHeroWithBreadcrumb = ({ breadcrumbHref, breadcrumbTitle, topHeroDescription, topHeroTitle, isTeamMemberPage, teamMemberTitle, secondHref  }: Props) => {
   return (
     <div className="top-hero-with-breadcrumb-container">
       <Breadcrumb
         href={breadcrumbHref}
         title={breadcrumbTitle}
+        isTeamMemberPage={isTeamMemberPage}
+        secondHref={secondHref}
+        secondTitle={teamMemberTitle}
       />
       <div className="top-hero-with-breadcrumb-title-container">
         <h1>{topHeroTitle}</h1>

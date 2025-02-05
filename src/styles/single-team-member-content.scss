@@ -1,0 +1,149 @@
+@import "./responsive.scss";
+
+.team-member-main-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include sm {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.team-member-first-main-content-container {
+  display: flex;
+  gap: 30px;
+
+  @include ms {
+    flex-direction: column;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  .team-member-image {
+    width: 540px;
+    height: 417px;
+    border-radius: 6px;
+    object-fit: cover;
+
+    @include ms {
+      width: 640px;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+}
+
+.team-member-first-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} 
+
+.team-member-title {
+  color: var(--primary-blue);
+  font-weight: bold;
+  font-size: var(--large);
+  line-height: var(--leading-sm);
+}
+
+.team-member-description {
+  color: var(--black);
+  font-size: var(--heading-five);
+  line-height: var(--leading-ml);
+}
+
+.team-member-social-links {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+
+  .team-member-social-icon {
+    color: var(--grey);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+  }
+
+  .team-member-social-icon:hover {
+    color: var(--primary-blue);
+  }
+
+}
+
+.team-member-second-main-content-container {
+  padding-top: 120px;
+
+  @include md {
+    padding-top: 60px;
+  }
+
+  @include ms {
+    padding-top: 60px;
+  }
+
+  @include sm {
+    padding-top: 60px;
+  }
+
+  .team-member-second-content-container {
+    display: flex;
+    gap: 125px;
+
+    @include md {
+      gap: 80px;
+    }
+
+    @include ms {
+      flex-direction: column;
+    }
+
+    @include sm {
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .team-member-second-content-title {
+      font-size: var(--heading-two);
+      font-weight: 800;
+      color: var(--black);
+      line-height: var(--leading-xl);
+
+      @include md {
+        font-size: var(--heading-three);
+        line-height: var(--leading-mds);
+      }
+  
+      @include ms {
+        font-size: var(--heading-three);
+        line-height: var(--leading-mds);
+      }
+
+      @include sm {
+        font-size: var(--heading-three);
+        line-height: var(--leading-lg);
+    
+      }
+    }
+  }
+}

@@ -25,6 +25,8 @@
   @include ms {
     padding-left: 20px;
     padding-right: 20px;
+    flex-direction: column;
+    gap: 60px;
   }
 
   @include sm {
@@ -76,6 +78,12 @@
     font-size: var(--heading-five);
     font-weight: 400;
     line-height: var(--leading-ml);
+  }
+
+  .cta-contact-us-descr br {
+    @include ms {
+      display: none;
+    }
   }
 }
 

@@ -9,6 +9,7 @@ import OurTeamPage from "./pages/our-team-page"
 import ContactUsPage from "./pages/contact-us-page"
 import FaqPage from "./pages/faq-page"
 import SingleSolutionPage from "./pages/single-solution-page"
+import SingleTeamMemberPage from "./pages/single-team-member-page"
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/faq" element={<MainLayout><FaqPage/></MainLayout>}/>
       <Route path="/services/:id" element={<MainLayout><SingleServiceDetailsPage/></MainLayout>}/>
       <Route path="/solutions/:id" element={<MainLayout><SingleSolutionPage/></MainLayout>}/>
+      <Route path="/our-team/member/:id" element={<MainLayout><SingleTeamMemberPage/></MainLayout>}/>
       <Route path="*" element={<Navigate to="/"/>}/>
     </Routes>
   )
