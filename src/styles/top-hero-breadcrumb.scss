@@ -35,6 +35,10 @@
   align-items: center;
   padding-right: 80px;
 
+  @include md {
+    padding-right: 0;
+  }
+
   @include ms {
     padding-right: 0;
   }

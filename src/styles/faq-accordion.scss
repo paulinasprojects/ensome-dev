@@ -32,6 +32,7 @@
 .faq-accordion-chevron {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 
   @include ms {
     width: 20px;
