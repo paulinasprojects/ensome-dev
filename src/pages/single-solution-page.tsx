@@ -1,11 +1,11 @@
-import SingleSolutionTopHero from "@/components/single-solution-top-hero"
+import Cta from "@/components/cta"
+import Newsletter from "@/components/newsletter"
 import SingleSolutionsContent from "@/components/single-solutions-content"
 import TopHeroWithBreadcrumb from "@/components/top-hero-with-breadcrumb"
 
 const SingleSolutionPage = () => {
   return (
     <div>
-      {/* <SingleSolutionTopHero/> */}
       <TopHeroWithBreadcrumb
         breadcrumbHref="/solutions/1"
         breadcrumbTitle="Data Visualization"
@@ -13,6 +13,8 @@ const SingleSolutionPage = () => {
         topHeroTitle="Data Visualization"
       />
       <SingleSolutionsContent/>
+      <Cta/>
+      <Newsletter/>
     </div>
   )
 }
