@@ -4,7 +4,7 @@ import Breadcrumb from "./breadcrumb";
 const SingleSolutionTopHero = () => {
   return (
     <div className="single-solution-top-hero-container">
-      <span>Data visualation</span>
+      <span>Data visualization</span>
       <Breadcrumb href="/solutions/1" title="Data visualization"/>
     </div>
   )

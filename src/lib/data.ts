@@ -707,3 +707,36 @@ export const careersAccordionData = [
     defaultOpen: false,
   },
 ];
+
+export const singleSolutionsData = [
+  {
+    title: "Symbol maps",
+    content:
+      "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
+  },
+  {
+    title: "Line charts",
+    content:
+      "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
+  },
+  {
+    title: "Pie charts",
+    content:
+      "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
+  },
+  {
+    title: "Tables",
+    content:
+      "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
+  },
+  {
+    title: "Histograms",
+    content:
+      "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
+  },
+  {
+    title: "Scatter plots",
+    content:
+      "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
+  },
+];

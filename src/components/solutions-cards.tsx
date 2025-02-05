@@ -25,7 +25,7 @@ const SolutionsCards = () => {
             <div className="solutions-card-items">
               {data.items.map((item) => (
                 <span key={item} className="solutions-card-item">
-                  <Circle/>
+                  <Circle className="solutions-card-item-icon"/>
                   {item}
                 </span>
               ))}
