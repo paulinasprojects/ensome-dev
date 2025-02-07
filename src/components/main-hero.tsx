@@ -9,7 +9,7 @@ const MainHero = () => {
         {/* Top */}
         <div className="main-hero-top-container">
           <div className="main-hero-top-content-container">
-            <p className="main-hero-top-title">The newest business <br /> analytics platform</p>
+            <h3 className="main-hero-top-title">The newest business <br /> analytics platform</h3>
             <hr className="main-hero-top-hr" />
             <p className="main-hero-top-description">Sed ut perspiciatis unde omnis iste natus error sit <br /> voluptatem accusantium doloremque laudantium, totam <br /> rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br /> quasi architecto beatae vitae dicta sunt explicabo.</p>
             <button className="main-hero-top-button">Learn more</button>
@@ -24,7 +24,7 @@ const MainHero = () => {
             <img src={heroTwo} alt="" className="main-hero-bottom-image" />
           </div>
           <div className="main-hero-bottom-content-container">
-            <p className="main-hero-bottom-title">Radically new solutions <br /> for data</p>
+            <h3 className="main-hero-bottom-title">Radically new solutions <br /> for data</h3>
             <hr className="main-hero-bottom-hr" />
             <p className="main-hero-bottom-description">Sed ut perspiciatis unde omnis iste natus error sit <br /> voluptatem accusantium doloremque laudantium, totam <br /> rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br /> quasi architecto beatae vitae dicta sunt explicabo.</p>
             <button className="main-hero-bottom-button">Learn more</button>

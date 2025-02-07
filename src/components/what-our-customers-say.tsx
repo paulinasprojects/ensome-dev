@@ -10,7 +10,7 @@ const WhatOurCustomersSay = () => {
       <div className="what-our-customers-say-main-content-container">
         <div className="what-our-customers-say-container">
           <div>
-              <p className="customers-says-main-content-title">What our customers say</p>
+              <h3 className="customers-says-main-content-title">What our customers say</h3>
               <hr className="customers-says-hr" />
           </div>
         </div>

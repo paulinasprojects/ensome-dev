@@ -5,7 +5,7 @@ interface TitleHeadingProps {
 const TitleHeading = ({title}: TitleHeadingProps) => {
   return (
        <div className="title-heading-container">
-        <span>{title}</span>
+        <h3>{title}</h3>
         <hr />
       </div>
   )

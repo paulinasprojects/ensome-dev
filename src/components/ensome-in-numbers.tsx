@@ -5,7 +5,7 @@ const EnsomeInNumber = () => {
     <div className="ensone-in-numbers-main-container">
       <div className="ensome-main-content-container">
         <div>
-          <p className="ensome-content-title">Ensome in numbers</p>
+          <h3 className="ensome-content-title">Ensome in numbers</h3>
           <hr className="ensome-in-numbers-hr" />
           <div className="ensome-main-content-numbers-container">
             <div className="ensome-main-content-numbers">

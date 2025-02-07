@@ -17,7 +17,7 @@ const Cta = ({ className, isServicesPage }: CTAProps) => {
       <div className="cta-content-container">
         <div className="cta-contact-us-container">
           <div>
-            <span className="cta-contact-us-title">Contact information</span>
+            <h3 className="cta-contact-us-title">Contact information</h3>
             <hr className="cta-hr" />
           </div>
           <div>

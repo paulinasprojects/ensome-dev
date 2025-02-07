@@ -1,14 +1,22 @@
+import { SVGProps } from "react";
+import IconComponent from "./icon";
 
-interface BenefitsCard {
-  icon: React.JSX.Element;
+interface BenefitsCardProps {
+  icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
   title: string;
   description: string;
 };
 
 
-const BenefitsCard = () => {
+const BenefitsCard = ({ icon, title, description }: BenefitsCardProps) => {
   return (
-    <div>BenefitsCard</div>
+    <div>
+      <span className="benefits-title">
+        <IconComponent icon={icon} className="benefits-icon"/>
+        {title}
+      </span>
+      <span className="benefits-description">{description}</span>
+    </div>
   )
 }
 

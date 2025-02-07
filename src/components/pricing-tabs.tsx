@@ -23,7 +23,7 @@ const PricingTabs = () => {
     <>
     <div className='pricing-tabs'>
       <div className="">
-        <span className='our-pricing-title'>Our pricing</span>
+        <h3 className='our-pricing-title'>Our pricing</h3>
         <hr className='our-pricing-hr' />
       </div>
       <div className='pricing-tab-container'>

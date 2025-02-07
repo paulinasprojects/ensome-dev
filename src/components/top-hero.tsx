@@ -7,7 +7,7 @@ const TopHero = () => {
     <div className="top-hero-main-container">
       <div className="top-hero-content-container">
         <div>
-          <p className="top-hero-content-title">Find true power in your <br /> data with Ensome</p>
+          <h1 className="top-hero-content-title">Find true power in your <br /> data with Ensome</h1>
         </div>
         <div className="top-hero-content">
           <p className="top-hero-content-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br /> accusantium doloremque laudantium, totam rem aperiam, <br /> eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
