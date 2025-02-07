@@ -212,3 +212,19 @@ input[type=number] {
   flex-direction: column;
   gap: 30px;
 }
+
+.testimonial-carousel {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @include md {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.testimonial-carousel-slide {
+  padding: 10px;
+  border-radius: 8px;
+}

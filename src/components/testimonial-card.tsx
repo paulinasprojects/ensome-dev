@@ -18,7 +18,7 @@ const TestimonialCard = ({ image, name, position  }: Props) => {
           </div>
         </div>
         <div>
-          <span className="testimonial-description">“Ut enim ad minima veniam, quis nostrum exercitationem ullam <br /> corpor suscipit laboriosam, nisi ut aliquid ex ea commodi <br /> consequatur? Quis utem vel eum iure reprehender qui in ea <br /> voluptate velit esse quam nihil molesti consequatur, vel illum.” </span>
+          <span className="testimonial-description">“Ut enim ad minima veniam, quis nostrum exercitationem ullam corpor suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis utem vel eum iure reprehender qui in ea voluptate velit esse quam nihil molesti consequatur, vel illum.” </span>
         </div>
       </div>
     </div>

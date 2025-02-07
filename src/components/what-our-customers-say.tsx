@@ -1,7 +1,5 @@
-import { TestimonialsData } from "@/lib/data";
 import "@/styles/what-our-customers-say.scss";
-// import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
-import TestimonialCard from "./testimonial-card";
+import TestimonialCarousel from "./testimonial-carousel";
 
 
 const WhatOurCustomersSay = () => {
@@ -15,16 +13,8 @@ const WhatOurCustomersSay = () => {
           </div>
         </div>
       </div>
-      {/* Testimonial Data Here */}
       <div className="customer-says-testimonial-card">
-        {TestimonialsData.map((data) => (
-          <TestimonialCard
-            key={data.id}
-            image={data.image}
-            name={data.name}
-            position={data.position}
-          />
-        ))}
+        <TestimonialCarousel/>
       </div>
     </div>
   )

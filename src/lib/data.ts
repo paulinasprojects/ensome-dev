@@ -27,6 +27,20 @@ export const TestimonialsData = [
     name: "Ruben Chifundo",
     position: "CEO of NOX",
   },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321824/008_img_person_8_ersggd.png",
+    name: "Hakob Jirair",
+    position: "CEO of YouBob",
+  },
+  {
+    id: uuidv4(),
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1738321768/003_img_person_3_ostqmu.png",
+    name: "Gor Sargis",
+    position: "CEO of YouBob",
+  },
 ];
 
 export const MonthlyPricingData = [
