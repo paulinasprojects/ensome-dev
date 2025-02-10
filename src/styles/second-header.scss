@@ -1,14 +1,13 @@
 @import "./responsive.scss";
 
-.main-header-container {
+.main-second-header-container {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 145px;
-  background-color: var(--primary-dark-blue);
-  border-bottom: 1px solid var(--helper-dark-blue);
+  background-color: var(--white);
 
   @include ms {
     gap: 50px;
@@ -20,7 +19,7 @@
     justify-content: space-between;
   }
 
-  .ensome-logo {
+  .ensome-blue-logo {
     width: 141px;
     height: 46px;
 
@@ -30,7 +29,7 @@
     }
   }
 
-  .header-link-container {
+  .second-header-link-container {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -43,25 +42,28 @@
       display: none;
     }
 
-    .header-link {
-      color: var(--white);
+    .second-header-link {
+      color: var(--grey);
       font-size: var(--medium);
       font-weight: 600;
       line-height: var(--leading-sm);
+      transition: all 0.3s ease;
     }
 
-    .header-link:hover {
-      border-bottom: 1.5px solid var(--white);
+    .second-header-link:hover {
+      color: var(--black);
     }
   }
-  .header-button {
+
+  .second-header-button {
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 4px;
     padding: 10px;
     border-radius: 6px;
-    color: var(--primary-dark-blue);
+    color: var(--white);
+    background-color: var(--primary-blue);
     font-size: var(--medium);
     font-weight: 600;
     line-height: var(--leading-sm);
@@ -72,23 +74,22 @@
     @include md {
       display: none;
     }
-  
+
     @include sm {
-     display: none;
+      display: none;
     }
 
-    .header-play-icon {
+    .second-header-play-icon {
       width: 24px;
       height: 24px;
     }
   }
-  .header-button:hover {
-    background-color: var(--primary-blue);
-    color: var(--white);
+  .second-header-button:hover {
+    background-color: #467dff;
   }
 }
 
-.mobile-nav {
+.second-mobile-nav {
   @include xl {
     display: none;
   }

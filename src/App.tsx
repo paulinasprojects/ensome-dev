@@ -10,6 +10,8 @@ import ContactUsPage from "./pages/contact-us-page"
 import FaqPage from "./pages/faq-page"
 import SingleSolutionPage from "./pages/single-solution-page"
 import SingleTeamMemberPage from "./pages/single-team-member-page"
+import { SecondLayout } from "./components/second-layout"
+import HomeV1Page from "./pages/home-v1-page"
 
 const App = () => {
   return (
@@ -24,6 +26,7 @@ const App = () => {
       <Route path="/services/:id" element={<MainLayout><SingleServiceDetailsPage/></MainLayout>}/>
       <Route path="/solutions/:id" element={<MainLayout><SingleSolutionPage/></MainLayout>}/>
       <Route path="/our-team/member/:id" element={<MainLayout><SingleTeamMemberPage/></MainLayout>}/>
+      <Route path="/home-v1" element={<SecondLayout><HomeV1Page/></SecondLayout>}/>
       <Route path="*" element={<Navigate to="/"/>}/>
     </Routes>
   )
