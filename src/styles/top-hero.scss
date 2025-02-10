@@ -88,9 +88,17 @@
           background-color: var(--white);
           border-radius: 7px;
           cursor: pointer;
+          outline: none;
+          border: none;
           font-size: var(--xl);
           font-weight: bold;
           line-height: var(--leading-ml);
+          transition: all 0.3s ease;
+        }
+
+        .top-hero-learn-more-button:hover {
+          color: var(--white);
+          background-color: var(--primary-blue);
         }
 
         .top-hero-watch-demo-button {
@@ -105,6 +113,7 @@
           font-size: var(--xl);
           font-weight: bold;
           line-height: var(--leading-ml);
+          transition: all 0.3s ease;
 
           .top-hero-play-icon {
             width: 24px;

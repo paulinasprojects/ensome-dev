@@ -99,6 +99,7 @@
       font-size: var(--large);
       font-weight: bold;
       line-height: var(--leading-sm);
+      transition: all 0.3s ease;
      }
 
      .main-hero-top-button:hover {
@@ -211,6 +212,7 @@
         font-size: var(--large);
         font-weight: bold;
         line-height: var(--leading-sm);
+        transition: all 0.3s ease;
       }
       .main-hero-bottom-button:hover {
         background-color: #467dff;

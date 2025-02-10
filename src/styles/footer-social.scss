@@ -30,17 +30,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 
   .footer-social-link-icon {
     width: 14px;
     height: 14px;
   }
-
-  .footer-social-link-icon:hover {
-    color: var(--white);
-  }
 }
 
 .footer-social-link:hover {
   background-color: var(--helper-dark-light-blue);
+  color: var(--white);
 }

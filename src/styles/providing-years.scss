@@ -118,6 +118,7 @@
   font-size: var(--large);
   line-height: var(--leading-sm);
   font-weight: bold;
+  transition: all 0.3s ease;
 
   @include ms {
     width: 120px;
@@ -129,7 +130,9 @@
 }
 
 .providing-years-see-pricing-button:hover {
-  background-color: #467dff;
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
 }
 
 .providing-years-contact-us-button {
@@ -144,6 +147,7 @@
   font-size: var(--large);
   line-height: var(--leading-sm);
   font-weight: bold;
+  transition: all 0.3s ease;
 
   @include ms {
     width: 120px;

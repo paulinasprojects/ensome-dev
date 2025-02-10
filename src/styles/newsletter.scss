@@ -108,6 +108,7 @@
   font-weight: bold;
   font-size: var(--large);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .newsletter-send-button:hover {
