@@ -1,3 +1,4 @@
+import Newsletter from "@/components/newsletter"
 import SingleTeamMemberContent from "@/components/single-team-member-content"
 import TopHeroWithBreadcrumb from "@/components/top-hero-with-breadcrumb"
 
@@ -14,6 +15,7 @@ const SingleTeamMemberPage = () => {
         topHeroDescription="Here you can find more about Bagrat Leo"
       />
       <SingleTeamMemberContent/>
+      <Newsletter/>
     </div>
   )
 }

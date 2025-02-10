@@ -10,6 +10,7 @@
     font-size: var(--medium);
     font-weight: 500;
     line-height: var(--leading-sm);
+    transition: all 0.3s ease;
   }
 
   .breadcrumb-home:hover {
@@ -27,6 +28,7 @@
     font-size: var(--medium);
     font-weight: 400;
     line-height: var(--leading-sm);
+    transition: all 0.3s ease;
   }
 
   .breadcrumb-title:hover {
