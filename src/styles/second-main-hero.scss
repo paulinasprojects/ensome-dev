@@ -1,0 +1,233 @@
+@import "./responsive.scss";
+
+.second-main-hero-container {
+  background-color: var(--white);
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  @include md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include ms {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .second-main-hero-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @include md {
+      justify-content: center;
+      align-items: start;
+    }
+
+    @include ms {
+      gap: 50px;
+    }
+    
+    @include sm {
+      gap: 50px;
+    }
+  }
+
+  .second-main-hero-top-container {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+
+    @include ms {
+      align-items: start;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include sm {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .second-main-hero-top-title {
+      color: var(--black);
+      font-size: var(--heading-two);
+      font-weight: 800;
+      line-height: var(--leading-xl);
+
+      @include md {
+        font-size: var(--heading-four);
+        line-height: var(--leading-md);
+      }
+    }
+
+    .second-main-hero-top-title br {
+      @include md {
+        display: none;
+      }
+    }
+
+    .second-main-hero-top-description {
+      margin-top: 30px;
+      color: var(--grey);
+      font-size: var(--heading-five);
+      line-height: var(--leading-ml);
+      font-weight: normal;
+    }
+
+    .second-main-hero-top-description br {
+      @include ms {
+        display: none;
+      }
+    }
+
+    .second-main-hero-top-button {
+      margin-top: 30px;
+      background-color: var(--primary-blue);
+      color: var(--white);
+      border-radius: 6px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: var(--large);
+      font-weight: bold;
+      line-height: var(--leading-sm);
+      transition: all 0.3s ease;
+    }
+
+    .second-main-hero-top-button:hover {
+      background-color: #467dff;
+    }
+
+    .second-main-hero-top-image {
+      width: 650px;
+      height: 590px;
+      object-fit: cover;
+
+      @include md {
+        width: 100%;
+      }
+
+      @include ms {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 350px;
+      }
+    }
+  }
+
+  .second-main-hero-bottom-container {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+
+    @include ms {
+      align-items: start;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @include sm {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .second-hero-bottom-image-container {
+      @include ms {
+        order: 2;
+      }
+
+      @include sm {
+        order: 2;
+      }
+    }
+
+    .second-main-hero-bottom-title {
+      color: var(--black);
+      font-size: var(--heading-two);
+      font-weight: 800;
+      line-height: var(--leading-xl);
+
+      @include md {
+        font-size: var(--heading-four);
+        line-height: var(--leading-md);
+      }
+    }
+
+    .second-main-hero-bottom-title br {
+      @include md {
+        display: none;
+      }
+    }
+
+
+    .second-main-hero-bottom-description {
+      margin-top: 30px;
+      color: var(--grey);
+      font-size: var(--heading-five);
+      line-height: var(--leading-ml);
+      font-weight: normal;
+    }
+
+    .second-main-hero-bottom-description br {
+      @include ms {
+        display: none;
+      }
+    }
+
+
+    .second-main-hero-bottom-button {
+      margin-top: 30px;
+      background-color: var(--primary-blue);
+      color: var(--white);
+      border-radius: 6px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: var(--large);
+      font-weight: bold;
+      line-height: var(--leading-sm);
+      transition: all 0.3s ease;
+    }
+
+    .second-main-hero-bottom-button:hover {
+      background-color: #467dff;
+    }
+
+    .second-main-hero-bottom-image {
+      width: 650px;
+      height: 590px;
+      object-fit: cover;
+
+      @include md {
+        width: 100%;
+      }
+
+      @include ms {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 350px;
+      }
+    }
+  }
+}
