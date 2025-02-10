@@ -1,13 +1,13 @@
 import OurClients from "@/components/our-clients"
 import SecondTopHero from "@/components/second-top-hero"
+import WhyChooseUs from "@/components/why-choose-us"
 
 const HomeV1Page = () => {
   return (
     <div>
       <SecondTopHero/>
-      <div className="">
         <OurClients isSecondHomePage/>
-      </div>
+        <WhyChooseUs/>
     </div>
   )
 }

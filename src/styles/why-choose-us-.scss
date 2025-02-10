@@ -1,0 +1,93 @@
+@import "./responsive.scss";
+
+.why-choose-us-main-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  background-color: var(--background);
+
+  @include md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.why-choose-us-title-container > h3 {
+  font-size: var(--heading-one);
+  line-height: var(--leading-xxl);
+  color: var(--black);
+  font-weight: 800;
+  margin-bottom: 30px;
+
+  @include md {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+  }
+}
+
+.why-choose-us-title-container > p {
+  color: var(--grey);
+  font-size: var(--heading-five);
+  line-height: var(--leading-ml);
+  font-weight: 400;
+}
+
+.why-choose-us-content-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  gap: 30px;
+
+  @include md {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include ms {
+    grid-template-columns: repeat(2, minmax(0, 350px));
+  }
+
+  @include sm {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: repeat(1, minmax(0, 390px));
+  }
+}
+
+.why-choose-us-advantages-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0px 4px 12px 0px rgba(12, 68, 204, 10%);
+  background-color: var(--white);
+  padding-top: 46px;
+  padding-bottom: 46px;
+  padding-left: 25px;
+
+  .why-choose-us-advantages-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.why-choose-us-advantages-content > span {
+  font-size: var(--heading-four);
+  color: var(--black);
+  font-weight: bold;
+  line-height: var(--leading-ml);
+}
+
+.why-choose-us-advantages-content > p {
+  color: var(--grey);
+  font-size: var(--large);
+  font-weight: 400;
+}
