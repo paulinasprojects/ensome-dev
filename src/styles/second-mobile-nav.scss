@@ -1,0 +1,59 @@
+@import "./responsive.scss";
+
+.second-close-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  z-index: 99;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.second-menu-icon {
+  width: 34px;
+  height: 24px;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+
+.second-mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+.second-mobile-nav-link-container {
+  background-color: var(--primary-blue);
+  width: 100%;
+  height: 100vh;
+}
+
+.second-mobile-nav-links-container {
+  padding-top: 50px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  
+  .second-mobile-nav-link {
+    color: var(--white);
+    font-size: var(--medium);
+    font-weight: 600;
+    line-height: var(--leading-sm);
+    transition: all 0.3s ease;
+  }
+
+  .second-mobile-nav-link:hover {
+    border-bottom: 1.5px solid var(--white);
+  }
+}
