@@ -1,6 +1,10 @@
+import SecondTopHero from "@/components/second-top-hero"
+
 const HomeV1Page = () => {
   return (
-    <div>HomeV1Page</div>
+    <div>
+      <SecondTopHero/>
+    </div>
   )
 }
 

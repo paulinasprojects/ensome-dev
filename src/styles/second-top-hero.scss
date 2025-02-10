@@ -1,0 +1,137 @@
+@import "./responsive.scss";
+
+.second-top-hero-main-container {
+  padding-top: 75px;
+
+  @include md {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.second-top-hero-main-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @include md {
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  @include ms {
+    flex-direction: column;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  .second-top-hero-image {
+    width: 845px;
+    height: 518px;
+    object-fit: cover;
+
+    @include md {
+     display: none;
+    }
+    @include ms {
+      display: none;
+    }
+
+    @include sm {
+     display: none;
+    }
+  }
+}
+
+.second-top-hero-content > h3 {
+  font-size: var(--heading-one);
+  line-height: var(--leading-xxl);
+  color: var(--black);
+  font-weight: 800;
+  margin-bottom: 30px;
+
+  @include md {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+  }
+}
+
+.second-top-hero-content > h3 > br {
+  @include md {
+    display: none;
+  }
+}
+
+.second-top-hero-content > p {
+  color: var(--grey);
+  font-size: var(--heading-five);
+  font-weight: 400;
+  line-height: var(--leading-ml);
+  margin-bottom: 35px;
+}
+
+.second-top-hero-content > p > br {
+  @include md {
+    display: none;
+  }
+}
+
+.second-top-hero-button-container {
+  display: flex;
+  gap: 20px;
+
+  .second-top-hero-learn-more-button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--large);
+    font-weight: bold;
+    line-height: var(--leading-sm);
+    transition: all 0.3s ease;
+  }
+  
+  .second-top-hero-learn-more-button:hover {
+    background-color: #467dff;
+  }
+  
+  .second-top-hero-watch-demp-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--helper-dark-blue);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: var(--xl);
+    font-weight: bold;
+    line-height: var(--leading-ml);
+    transition: all 0.3s ease;
+  
+    .second-top-hero-play-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .second-top-hero-watch-demp-button:hover {
+    color: var(--primary-blue);
+  }
+}
