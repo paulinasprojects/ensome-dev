@@ -1,0 +1,106 @@
+@import "./responsive.scss";
+
+.glad-were-here-main-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  background-color: var(--primary-light-blue);
+
+
+  @include md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .glad-were-here-title {
+    font-size: var(--heading-one);
+    line-height: var(--leading-xxl);
+    color: var(--black);
+    font-weight: 800;
+    margin-bottom: 30px;
+  
+    @include md {
+      font-size: var(--heading-four);
+      line-height: var(--leading-md);
+    }
+  }
+}
+
+.glad-were-here-content-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+  gap: 30px;
+
+  @include md {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include ms {
+    grid-template-columns: repeat(2, minmax(0, 350px));
+  }
+
+  @include sm {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: repeat(1, minmax(0, 390px));
+  }
+}
+
+.glad-were-here-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0px 4px 12px 0px rgba(12, 68, 204, 10%);
+  background-color: var(--white);
+  padding-top: 30px;
+  padding-bottom: 45px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.glad-were-here-content > span {
+  color: var(--grey);
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+}
+
+.glad-were-here-content > h4 {
+  font-size: var(--heading-four);
+  font-weight: bold;
+  color: var(--black);
+  line-height: var(--leading-ml);
+}
+
+.glad-were-here-content > p {
+  color: var(--grey);
+  font-size: var(--large);
+  line-height: var(--leading-mds);
+  font-weight: 400;
+}
+
+.glad-were-here-extras {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.glad-were-here-extras > span {
+  color: var(--primary-blue);
+  font-weight: 800;
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+  padding: 5px;
+  outline: 1px solid var(--background);
+  border-radius: 6px;
+}

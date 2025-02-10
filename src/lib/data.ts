@@ -754,3 +754,27 @@ export const singleSolutionsData = [
       "convallis ex orci, nec sodales urna convallis ac. cursus non dolor eu aliquam. Aenean et nisl in magna imperdiet auctor in vehicula arcu. ",
   },
 ];
+
+export const gladWereHereData = [
+  {
+    date: "11 Jan 2025",
+    title: "Sed ut perspiciatis unde omnis at vero blanditils",
+    content:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti...",
+    extras: ["Proxy", "VPN"],
+  },
+  {
+    date: "12 Jan 2025",
+    title: "Sed ut perspiciatis unde omnis at vero blanditils",
+    content:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti...",
+    extras: ["Proxy", "VPN"],
+  },
+  {
+    date: "13 Jan 2025",
+    title: "Sed ut perspiciatis unde omnis at vero blanditils",
+    content:
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti...",
+    extras: ["Proxy", "VPN"],
+  },
+];

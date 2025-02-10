@@ -1,5 +1,5 @@
 import { servicesData } from "@/lib/data";
-import "@/styles/why-choose-us-.scss";
+import "@/styles/why-choose-us.scss";
 import IconComponent from "./icon";
 
 const WhyChooseUs = () => {
