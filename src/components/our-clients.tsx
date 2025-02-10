@@ -1,9 +1,14 @@
-import { ourClientsData } from "@/lib/data"
-import '@/styles/our-clients.scss'
+import { ourClientsData } from "@/lib/data";
+import classNames from "@/lib/utils";
+import '@/styles/our-clients.scss';
 
-const OurClients = () => {
+interface Props {
+  isSecondHomePage?: boolean;
+};
+
+const OurClients = ({ isSecondHomePage }: Props) => {
   return (
-    <div className="our-client-main-container">
+    <div className={classNames(isSecondHomePage ? "our-clients-second-main-container" : "our-client-main-container")}>
       {ourClientsData.map((data) => (
           <img src={data.image} alt="" key={data.id} className="test-image" />
       ))}
