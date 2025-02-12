@@ -1,6 +1,7 @@
 import GladWereHere from "@/components/glad-were-here"
 import OurAchievementsSecond from "@/components/our-achievements-second"
 import OurClients from "@/components/our-clients"
+import SecondCTA from "@/components/second-cta"
 import SecondMainHero from "@/components/second-main-hero"
 import SecondTopHero from "@/components/second-top-hero"
 import Testimonials from "@/components/testimonials"
@@ -16,6 +17,7 @@ const HomeV1Page = () => {
       <GladWereHere/>
       <Testimonials/>
       <OurAchievementsSecond/>
+      <SecondCTA/>
     </div>
   )
 }
