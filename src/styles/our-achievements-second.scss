@@ -1,0 +1,60 @@
+@import "./responsive.scss";
+
+.our-achievements-second-main-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: var(--primary-blue);
+
+  @include md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.our-achievements-second-content-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 350px));
+  gap: 30px;
+
+  @include ms {
+    gap: 50px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  @include sm {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.our-achievements-second-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.our-achievements-second-content > span {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 800;
+
+  @include sm {
+    font-size: 32px;
+  }
+}
+
+.our-achievements-second-content > p {
+  color: var(--white);
+  font-weight: 400;
+  font-size: var(--large);
+}
+

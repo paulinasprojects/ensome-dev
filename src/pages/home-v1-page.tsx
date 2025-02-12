@@ -1,4 +1,5 @@
 import GladWereHere from "@/components/glad-were-here"
+import OurAchievementsSecond from "@/components/our-achievements-second"
 import OurClients from "@/components/our-clients"
 import SecondMainHero from "@/components/second-main-hero"
 import SecondTopHero from "@/components/second-top-hero"
@@ -14,6 +15,7 @@ const HomeV1Page = () => {
       <SecondMainHero/>
       <GladWereHere/>
       <Testimonials/>
+      <OurAchievementsSecond/>
     </div>
   )
 }

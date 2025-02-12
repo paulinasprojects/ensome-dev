@@ -229,12 +229,16 @@ input[type=number] {
   border-radius: 8px;
 }
 
-.second-testimonial-carusel {
+.second-testimonial-carousel {
   width: 100%;
-  padding-left: 100px;
   padding-right: 100px;
 
   @include md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include sm {
     padding-left: 0;
     padding-right: 0;
   }
@@ -247,5 +251,9 @@ input[type=number] {
 
   @include md {
     margin-top: 50px;
+  }
+
+  @include sm {
+    padding: 0;
   }
 }
