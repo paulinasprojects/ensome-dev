@@ -19,6 +19,9 @@ const GladWereHere = () => {
           </div>
         ))}
       </div>
+      <div className="glad-were-here-button-container">
+        <button className="glad-were-here-button">Learn more</button>
+      </div>
     </div>
   )
 }

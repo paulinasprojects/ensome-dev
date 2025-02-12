@@ -2,10 +2,12 @@
 
 .our-clients-second-main-container {
   margin-top: 48px;
+  padding-left: 66px;
   display: flex;
   align-items: center;
 
   @include md {
+    padding-left: 16px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
