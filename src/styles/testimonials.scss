@@ -1,0 +1,35 @@
+@import "./responsive.scss";
+
+.testimonials-main-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 66px;
+  background-color: var(--white);
+
+  @include md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.testimonials-main-title {
+  font-size: var(--heading-one);
+  line-height: var(--leading-xxl);
+  color: var(--black);
+  font-weight: 800;
+  margin-bottom: 30px;
+
+  @include md {
+    font-size: var(--heading-four);
+    line-height: var(--leading-md);
+  }
+}

@@ -2,6 +2,7 @@ import GladWereHere from "@/components/glad-were-here"
 import OurClients from "@/components/our-clients"
 import SecondMainHero from "@/components/second-main-hero"
 import SecondTopHero from "@/components/second-top-hero"
+import Testimonials from "@/components/testimonials"
 import WhyChooseUs from "@/components/why-choose-us"
 
 const HomeV1Page = () => {
@@ -12,6 +13,7 @@ const HomeV1Page = () => {
       <WhyChooseUs/>
       <SecondMainHero/>
       <GladWereHere/>
+      <Testimonials/>
     </div>
   )
 }

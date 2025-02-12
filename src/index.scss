@@ -228,3 +228,24 @@ input[type=number] {
   padding: 10px;
   border-radius: 8px;
 }
+
+.second-testimonial-carusel {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @include md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.second-testimonial-carousel-slide {
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 8px;
+
+  @include md {
+    margin-top: 50px;
+  }
+}

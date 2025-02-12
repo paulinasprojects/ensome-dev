@@ -1,0 +1,48 @@
+@import "./responsive.scss";
+
+.second-testimonial-card-main-container {
+  background-color: var(--white);
+  box-shadow: 0px 4px 12px 0px rgba(12, 68, 204, 10%);
+  padding: 35px;
+  position: relative;
+}
+
+.second-testimonial-card-image-container {
+  position: absolute;
+  top: -20px;
+  left: 35px;
+}
+
+.second-testimonial-card-image-container > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.second-testimonial-card-main-content {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.second-testimonial-card-main-content > p {
+  margin-bottom: 35px;
+  color: var(--grey);
+  font-size: var(--large);
+  line-height: var(--leading-mds);
+}
+
+.second-testimonial-name {
+  font-size: var(--large);
+  line-height: var(--leading-sm);
+  font-weight: bold;
+  color: var(--black);
+}
+
+.second-testimonial-position {
+  font-size: var(--medium);
+  line-height: var(--leading-sm);
+  color: var(--grey);
+  font-weight: medium;
+}
