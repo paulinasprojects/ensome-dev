@@ -1,8 +1,13 @@
 import "@/styles/newsletter.scss";
+import classNames from "@/lib/utils";
 
-const Newsletter = () => {
+interface Props {
+  isSecondHomePage?: boolean;
+}
+
+const Newsletter = ({ isSecondHomePage }: Props) => {
   return (
-    <div className="newsletter-main-container">
+    <div className={classNames(isSecondHomePage ? "second-newsletter-main-container": "newsletter-main-container")}>
       <div className="newsletter-content-container">
         <div className="newsletter-title-container">
           <h3 className="newsletter-title">Subscribe to our newsletter</h3>

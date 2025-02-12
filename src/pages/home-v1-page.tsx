@@ -1,4 +1,5 @@
 import GladWereHere from "@/components/glad-were-here"
+import Newsletter from "@/components/newsletter"
 import OurAchievementsSecond from "@/components/our-achievements-second"
 import OurClients from "@/components/our-clients"
 import SecondCTA from "@/components/second-cta"
@@ -18,6 +19,7 @@ const HomeV1Page = () => {
       <Testimonials/>
       <OurAchievementsSecond/>
       <SecondCTA/>
+      <Newsletter isSecondHomePage/>
     </div>
   )
 }
