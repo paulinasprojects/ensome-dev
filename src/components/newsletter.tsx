@@ -1,13 +1,24 @@
-import "@/styles/newsletter.scss";
+import { motion } from "framer-motion";
 import classNames from "@/lib/utils";
+import "@/styles/newsletter.scss";
 
 interface Props {
   isSecondHomePage?: boolean;
 }
 
+
 const Newsletter = ({ isSecondHomePage }: Props) => {
   return (
-    <div className={classNames(isSecondHomePage ? "second-newsletter-main-container": "newsletter-main-container")}>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+      className={classNames(isSecondHomePage ? 
+        "second-newsletter-main-container":
+        "newsletter-main-container"
+        )}
+      >
       <div className="newsletter-content-container">
         <div className="newsletter-title-container">
           <h3 className="newsletter-title">Subscribe to our newsletter</h3>
@@ -18,7 +29,7 @@ const Newsletter = ({ isSecondHomePage }: Props) => {
           <button className="newsletter-send-button">Send</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

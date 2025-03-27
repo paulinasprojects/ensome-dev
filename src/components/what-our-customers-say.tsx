@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import "@/styles/what-our-customers-say.scss";
 import TestimonialCarousel from "./testimonial-carousel";
 
 
 const WhatOurCustomersSay = () => {
   return (
-    <div className="what-our-customers-say-main-container">
+    <motion.div className="what-our-customers-say-main-container" 
+      initial={{ opacity: 0, y: 120 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0}}
+      viewport={{ once: true }} 
+    >
       <div className="what-our-customers-say-main-content-container">
         <div className="what-our-customers-say-container">
           <div>
@@ -16,7 +22,7 @@ const WhatOurCustomersSay = () => {
       <div className="customer-says-testimonial-card">
         <TestimonialCarousel/>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

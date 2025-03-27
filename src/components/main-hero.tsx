@@ -1,14 +1,24 @@
+import { motion } from "framer-motion"
 import "@/styles/main-hero.scss"
 import heroOne from '/hero-one.png';
 import heroTwo from '/hero-two.png';
 import { MainHeroTitle, MainHeroDescription, MainHeroButton, MainHeroImage } from "./ui/main-hero-card";
 
+
 const MainHero = () => {
   return (
-    <div className="main-hero-main-container">
+    <motion.div 
+      className="main-hero-main-container"
+    >
       <div className="main-hero-content-container">
         {/* Top */}
-        <div className="main-hero-top-container">
+        <motion.div 
+          className="main-hero-top-container"
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, ease: "circInOut" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} 
+        >
           <div className="main-hero-top-content-container">
             <MainHeroTitle className="main-hero-top-title">The newest business <br /> analytics platform</MainHeroTitle>
               <hr className="main-hero-top-hr" />
@@ -21,9 +31,14 @@ const MainHero = () => {
               className="main-hero-top-image"
             />
           </div>
-        </div>
+        </motion.div>
         {/* Bottom */}
-        <div className="main-hero-bottom-container">
+        <motion.div className="main-hero-bottom-container"  
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, ease: "circInOut" }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }} 
+        >
           <div className="main-hero-bottom-image-container">
             <MainHeroImage
               src={heroTwo}
@@ -36,9 +51,9 @@ const MainHero = () => {
             <MainHeroDescription className="main-hero-bottom-description">Sed ut perspiciatis unde omnis iste natus error sit <br /> voluptatem accusantium doloremque laudantium, totam <br /> rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br /> quasi architecto beatae vitae dicta sunt explicabo.</MainHeroDescription>
             <MainHeroButton className="main-hero-bottom-button">Learn more</MainHeroButton>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

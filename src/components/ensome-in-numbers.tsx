@@ -1,8 +1,15 @@
+import { motion } from "framer-motion"
 import "@/styles/ensone-in-numbers.scss";
 
 const EnsomeInNumber = () => {
   return (
-    <div className="ensone-in-numbers-main-container">
+    <motion.div 
+      className="ensone-in-numbers-main-container"
+      initial={{ opacity: 0, y: 120 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+    >
       <div className="ensome-main-content-container">
         <div>
           <h3 className="ensome-content-title">Ensome in numbers</h3>
@@ -27,7 +34,7 @@ const EnsomeInNumber = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

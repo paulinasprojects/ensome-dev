@@ -1,11 +1,19 @@
+import { motion } from "framer-motion"
 import "@/styles/top-hero.scss";
 import { IoPlayCircleOutline } from "react-icons/io5";
 
 
+
 const TopHero = () => {
   return (
-    <div className="top-hero-main-container">
-      <div className="top-hero-content-container">
+    <motion.div 
+      className="top-hero-main-container"
+      initial={{ opacity: 0, y: 21 }}
+      transition={{ duration: 0.5, ease: "circInOut" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
+      <motion.div className="top-hero-content-container">
         <div>
           <h1 className="top-hero-content-title">Find true power in your <br /> data with Ensome</h1>
         </div>
@@ -19,8 +27,8 @@ const TopHero = () => {
             </button>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 

@@ -1,12 +1,37 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import { useMediaQuery } from 'usehooks-ts';
 import { useState } from 'react';
 import Tabs from './tabs';
 import PricingContent from './pricing-content';
-import '@/styles/pricing-tabs.scss';
 import MonthlyPricing from './monthly-pricing';
 import YearlyPricing from './yearly-pricing';
+import '@/styles/pricing-tabs.scss';
 
 const PricingTabs = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
   const [toggleTab, setToggleTab] = useState<number>(1);
+
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
+  visible: {
+    opacity: 1,
+    y: 0
+  }
+}
 
   const getContent = () => {
     switch (toggleTab) {
@@ -20,12 +45,18 @@ const PricingTabs = () => {
   };
 
   return (
-    <>
+    <AnimatePresence initial={isMobile ? false : true}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.4}}
+      variants={containerVariants}
+    >
     <div className='pricing-tabs'>
-      <div className="">
+      <motion.div  variants={itemVariants}>
         <h3 className='our-pricing-title'>Our pricing</h3>
         <hr className='our-pricing-hr' />
-      </div>
+      </motion.div>
       <div className='pricing-tab-container'>
       <Tabs
         label='Monthly'
@@ -39,10 +70,14 @@ const PricingTabs = () => {
       />
       </div>
     </div>
-    <div className='pricing-content'>
+    <motion.div
+      className='pricing-content'
+        variants={itemVariants}
+      >
       <PricingContent content={getContent()}/>
-    </div>
-    </>
+    </motion.div>
+    </motion.div>
+    </AnimatePresence>
   )
 }
 
