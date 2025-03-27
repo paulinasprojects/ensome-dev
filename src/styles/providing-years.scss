@@ -53,6 +53,10 @@
     font-size: 90px;
     font-weight: 800;
     color: var(--primary-blue);
+
+    @include sm {
+      font-size: 70px;
+    }
   }
 
   .providing-years-text {

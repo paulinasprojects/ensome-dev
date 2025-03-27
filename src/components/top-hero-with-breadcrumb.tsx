@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Breadcrumb from "./breadcrumb";
 import "@/styles/top-hero-breadcrumb.scss";
 
@@ -13,7 +14,13 @@ interface Props {
 
 const TopHeroWithBreadcrumb = ({ breadcrumbHref, breadcrumbTitle, topHeroDescription, topHeroTitle, isTeamMemberPage, teamMemberTitle, secondHref  }: Props) => {
   return (
-    <div className="top-hero-with-breadcrumb-container">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.5, ease: "circInOut" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+      className="top-hero-with-breadcrumb-container"
+    >
       <Breadcrumb
         href={breadcrumbHref}
         title={breadcrumbTitle}
@@ -25,7 +32,7 @@ const TopHeroWithBreadcrumb = ({ breadcrumbHref, breadcrumbTitle, topHeroDescrip
         <h1>{topHeroTitle}</h1>
         <p>{topHeroDescription}</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

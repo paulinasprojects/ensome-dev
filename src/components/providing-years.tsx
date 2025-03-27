@@ -1,8 +1,15 @@
+import { motion } from "framer-motion"
 import "@/styles/providing-years.scss";
 
 const ProvidingYears = () => {
   return (
-    <div className="providing-years-main-container">
+    <motion.div 
+      className="providing-years-main-container"
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+    >
       <div className="providing-years-content-container">
           <div className="providing-years-main-container-container">
             <span className="providing-years-number">15 <span className="providing-years-text">years <br /> experience <br /> in data</span></span>
@@ -19,7 +26,7 @@ const ProvidingYears = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
