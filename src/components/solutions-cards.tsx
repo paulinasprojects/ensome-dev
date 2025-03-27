@@ -16,7 +16,8 @@ const SolutionsCards = () => {
 
   return (
     <AnimatePresence initial={isMobile ? false : true}>
-      <motion.div className="solutions-cards-main-container"
+      <motion.div 
+        className="solutions-cards-main-container"
         initial="hidden"
         whileInView="visible"
         viewport={{once: true, amount: 0.8}}

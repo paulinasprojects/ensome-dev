@@ -6,10 +6,10 @@ import "@/styles/single-service-content.scss";
 const SingleServiceContent = () => {
   return (
     <motion.div
-    initial={{ opacity: 0, y: 70 }}
-    transition={{ duration: 0.5, ease: "easeIn" }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }} 
+      initial={{ opacity: 0, y: 70 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
     >
       <div className="single-service-content-main-container">
         <div className="single-service-content-customer-container">

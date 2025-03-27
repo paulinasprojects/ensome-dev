@@ -5,7 +5,8 @@ import TestimonialCarousel from "./testimonial-carousel";
 
 const WhatOurCustomersSay = () => {
   return (
-    <motion.div className="what-our-customers-say-main-container" 
+    <motion.div 
+      className="what-our-customers-say-main-container" 
       initial={{ opacity: 0, y: 120 }}
       transition={{ duration: 0.5, ease: "easeIn" }}
       whileInView={{ opacity: 1, y: 0}}

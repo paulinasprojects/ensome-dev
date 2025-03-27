@@ -154,6 +154,11 @@ input[type=number] {
   @include md {
     padding-left: 0px;
   }
+
+  .slick-prev,
+  .slcik-next  {
+    display: none !important;
+  }
 }
 
 .carousel-slide {

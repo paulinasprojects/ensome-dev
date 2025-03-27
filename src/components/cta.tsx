@@ -1,10 +1,11 @@
+import { motion } from "framer-motion"
 import { IoMail } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdPin } from "react-icons/io";
-
-import CtaForm from "./cta-form";
-import "@/styles/cta.scss";
 import classNames from "@/lib/utils";
+import CtaForm from "./cta-form";
+
+import "@/styles/cta.scss";
 
 interface CTAProps {
   className?: string | undefined;
@@ -13,7 +14,12 @@ interface CTAProps {
 
 const Cta = ({ className, isServicesPage }: CTAProps) => {
   return (
-    <div className={classNames(isServicesPage ? className : "cta-main-container")}>
+    <motion.div
+      initial={{ opacity: 0, y: 70 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+      className={classNames(isServicesPage ? className : "cta-main-container")}> 
       <div className="cta-content-container">
         <div className="cta-contact-us-container">
           <div>
@@ -42,7 +48,7 @@ const Cta = ({ className, isServicesPage }: CTAProps) => {
           <CtaForm/>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
