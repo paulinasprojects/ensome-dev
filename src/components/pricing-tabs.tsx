@@ -6,32 +6,12 @@ import PricingContent from './pricing-content';
 import MonthlyPricing from './monthly-pricing';
 import YearlyPricing from './yearly-pricing';
 import '@/styles/pricing-tabs.scss';
+import { containerVariants, itemVariants } from '@/lib/constants';
 
 const PricingTabs = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
   const [toggleTab, setToggleTab] = useState<number>(1);
 
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: {
-    opacity: 0,
-    y: 10,
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
-}
 
   const getContent = () => {
     switch (toggleTab) {

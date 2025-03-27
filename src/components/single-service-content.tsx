@@ -1,9 +1,16 @@
+import { motion } from "framer-motion";
 import { IoIosCheckmark } from "react-icons/io";
 import "@/styles/single-service-content.scss";
 
+
 const SingleServiceContent = () => {
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0, y: 70 }}
+    transition={{ duration: 0.5, ease: "easeIn" }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }} 
+    >
       <div className="single-service-content-main-container">
         <div className="single-service-content-customer-container">
           <span>Customer</span>
@@ -48,7 +55,7 @@ const SingleServiceContent = () => {
           <p>Donec tincidunt tempor quam, non mollis quam finibus nec. Quisque finibus consequat <br /> felis vel pretium. Aliquam gravida nisi vel convallis ultricies. Integer ante sapien, <br /> consequat et dolor vel.</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

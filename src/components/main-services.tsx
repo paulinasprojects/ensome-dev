@@ -1,14 +1,21 @@
+import { motion} from "framer-motion"
+import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { servicesData } from "@/lib/data";
 import IconComponent from "./icon";
 import "@/styles/main-services.scss";
-import { useNavigate } from "react-router-dom";
 
 const MainServices = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="main-services-content-container">
+    <motion.div 
+      className="main-services-content-container"
+      initial={{ opacity: 0, y: 70 }}
+      transition={{ duration: 0.5, ease: "circInOut" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+    >
       {servicesData.map((data) => (
         <div key={data.id} className="main-services-main-content-container">
           <div className="main-services-content">
@@ -19,7 +26,7 @@ const MainServices = () => {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,31 +1,10 @@
 import { motion } from "framer-motion";
-import "@/styles/ensome-benefits.scss";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import { BrainCircuit, ArrowTrendingLines, Key } from "./common/icons";
 import BenefitsCard from "./benefits-card";
+import "@/styles/ensome-benefits.scss";
 
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      duration: 0.5,
-      ease: "easeIn"
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: {
-    opacity: 0,
-    y: 120,
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
-}
 
 const EnsomeBenefits = () => {
   return (

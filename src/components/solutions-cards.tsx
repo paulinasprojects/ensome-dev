@@ -5,31 +5,10 @@ import { SolutionsData } from "@/lib/data";
 import TitleHeading from "./title-heading";
 import IconComponent from "./icon";
 import { Circle } from "./common/icons";
+import { useMediaQuery } from "usehooks-ts";
+import { containerVariants, itemVariants } from "@/lib/constants";
 
 import "@/styles/solutions-cards.scss";
-import { useMediaQuery } from "usehooks-ts";
-
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    }
-  }
-}
-
-const itemVariants = {
-  hidden: {
-    opacity: 0,
-    y: 10,
-  },
-  visible: {
-    opacity: 1,
-    y: 0
-  }
-}
 
 const SolutionsCards = () => {
   const navigate = useNavigate();

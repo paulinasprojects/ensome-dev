@@ -8,8 +8,8 @@ const SingleSolutionsContent = () => {
 
       <motion.div 
         className="single-solutions-main-container"
-        initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.5, ease: "circInOut" }}
+        initial={{ opacity: 0, y: 80 }}
+          transition={{ duration: 0.8, ease: "circInOut" }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} 
       >
