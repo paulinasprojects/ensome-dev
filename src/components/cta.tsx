@@ -29,7 +29,7 @@ const Cta = ({ className, isServicesPage }: CTAProps) => {
             <hr className="cta-hr" />
           </div>
           <div>
-            <span className="cta-contact-us-descr">Fill up the form and our Team will get back <br /> to you with 25 hours.</span>
+            <span className="cta-contact-us-descr">Fill up the form and our Team will get back <br /> to you within 24 hours.</span>
           </div>
           <div className="cta-contact-us-links">
             <span className="cta-contact-us-link">
