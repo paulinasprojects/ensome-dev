@@ -2,12 +2,20 @@ import ContactUsBreacrumb from "@/components/contact-us-breadcrumb";
 import ContactUsForm from "@/components/contact-us-form";
 import ContactUsInfo from "@/components/contact-us-info";
 import "@/styles/contact-us.scss";
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 
 const ContactUsPage = () => {
   return (
-    <>
-    <div className='contact-us-main-container'>
-      <div className="contact-us-content-container">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+    >
+    <div className='contact-us-main-container'
+    >
+      <motion.div className="contact-us-content-container" variants={itemVariants}>
        <div className="contact-us-title-container">
         <ContactUsBreacrumb/>
         <span className="contact-us-title">
@@ -17,12 +25,12 @@ const ContactUsPage = () => {
        <div>
         <ContactUsForm/>
        </div>
-      </div>
+      </motion.div>
     </div>
-    <div>
+    <motion.div variants={itemVariants}>
       <ContactUsInfo/>
-    </div>
-    </>
+    </motion.div>
+    </motion.div>
   )
 }
 
