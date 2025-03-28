@@ -32,7 +32,9 @@ const PricingTabs = () => {
       viewport={{once: true, amount: 0.4}}
       variants={containerVariants}
     >
-    <div className='pricing-tabs'>
+    <div className='pricing-tabs'
+              id='pricing-section'
+    >
       <motion.div  variants={itemVariants}>
         <h3 className='our-pricing-title'>Our pricing</h3>
         <hr className='our-pricing-hr' />

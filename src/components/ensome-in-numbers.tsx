@@ -5,9 +5,9 @@ const EnsomeInNumber = () => {
   return (
     <motion.div 
       className="ensone-in-numbers-main-container"
-      initial={{ opacity: 0, y: 120 }}
+      initial={{ opacity: 0, y: 0 }}
       transition={{ duration: 0.5, ease: "easeIn" }}
-      whileInView={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 60 }}
       viewport={{ once: true }} 
     >
       <div className="ensome-main-content-container">

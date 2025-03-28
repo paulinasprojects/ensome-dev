@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { containerVariants, itemVariants } from "@/lib/constants";
 import ContactUsBreacrumb from "@/components/contact-us-breadcrumb";
 import ContactUsForm from "@/components/contact-us-form";
 import ContactUsInfo from "@/components/contact-us-info";
@@ -7,30 +6,40 @@ import "@/styles/contact-us.scss";
 
 const ContactUsPage = () => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{once: true, amount: 0.2}}
-      variants={containerVariants}
-    >
-    <div className='contact-us-main-container'
-    >
-      <motion.div className="contact-us-content-container" variants={itemVariants}>
+    <>
+    <div className='contact-us-main-container'>
+      <motion.div
+        initial={{ opacity: 0, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+        whileInView={{ opacity: 1, y: 20}}
+        viewport={{ once: true }} 
+        className="contact-us-content-container"
+      >
        <div className="contact-us-title-container">
         <ContactUsBreacrumb/>
         <span className="contact-us-title">
           Contact Us
         </span>
        </div>
-       <div>
+       <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }} 
+      >
         <ContactUsForm/>
-       </div>
+       </motion.div>
       </motion.div>
     </div>
-    <motion.div variants={itemVariants}>
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }} 
+    >
       <ContactUsInfo/>
     </motion.div>
-    </motion.div>
+    </>
   )
 }
 

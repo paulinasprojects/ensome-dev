@@ -10,9 +10,9 @@ interface Props {
 const OurClients = ({ isSecondHomePage }: Props) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y:20 }}
+      initial={{ opacity: 0, x:20 }}
       transition={{ duration: 0.5, ease: "easeIn"}}
-      whileInView={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       className={classNames(isSecondHomePage ? 
         "our-clients-second-main-container" : 

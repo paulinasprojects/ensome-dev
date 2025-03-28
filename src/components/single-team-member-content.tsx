@@ -10,18 +10,18 @@ import { TeamMemberDescription, TeamMemberTitle } from "./ui/team-member-card";
 
 const SingleTeamMemberContent = () => {
   return (
-    <motion.div 
-      className="team-member-main-container"
-      initial={{ opacity: 0, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeIn" }}
-      whileInView={{ opacity: 1, y: 50}}
-      viewport={{ once: true }} 
-    >
-      <div className="team-member-first-main-content-container">
+    <div className="team-member-main-container">
+      <motion.div 
+        className="team-member-first-main-content-container"
+        initial={{ opacity: 0, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+        whileInView={{ opacity: 1, y: 50}}
+        viewport={{ once: true }} 
+      >
         <div>
           <img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1737546097/testimonial-one_rpk8zm.png" alt="" className="team-member-image" />
         </div>
-        <motion.div className="team-member-first-content-container">
+        <div className="team-member-first-content-container">
           <div>
             <TeamMemberTitle>Name</TeamMemberTitle>
             <TeamMemberDescription>Bagrat Leo</TeamMemberDescription>
@@ -48,19 +48,31 @@ const SingleTeamMemberContent = () => {
               </Link>
             </div>
           </div>
-        </motion.div>
-      </div>
-      <div className="team-member-second-main-content-container">
+        </div>
+      </motion.div>
+      <div  
+        className="team-member-second-main-content-container"
+      >
         <div className="team-member-second-content-container">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.8, ease: "easeIn" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }} 
+          >
             <span className="team-member-second-content-title">Want Leo to share his expertise with you?</span>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            transition={{ duration: 0.8, ease: "easeIn" }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }} 
+          >
             <CtaForm/>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 };
 

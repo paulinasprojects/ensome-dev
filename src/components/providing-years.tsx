@@ -1,7 +1,20 @@
 import { motion } from "framer-motion"
 import "@/styles/providing-years.scss";
+import { useNavigate } from "react-router-dom";
 
 const ProvidingYears = () => {
+  const navigate = useNavigate();
+
+  const scrollToPricing = () => {
+    navigate("/")
+    setTimeout(() => {
+      const section = document.getElementById("pricing-section");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    },500)
+  }
+
   return (
     <motion.div 
       className="providing-years-main-container"
@@ -20,8 +33,8 @@ const ProvidingYears = () => {
             <span>Technology doesn't just help businesses</span>
             <p>Phasellus tristique eu nisl eu consectetur. Morbi urna massa, imperdiet in mauris et, euismod vestibulum lacus. Integer enim elit, tincidunt aliquam ligula.</p>
             <div className="providing-years-main-button-container">
-              <button className="providing-years-see-pricing-button">See pricing</button>
-              <button className="providing-years-contact-us-button">Contact Us</button>
+              <button className="providing-years-see-pricing-button" onClick={scrollToPricing}>See pricing</button>
+              <button className="providing-years-contact-us-button" onClick={() => navigate("/contact-us")}>Contact Us</button>
             </div>
           </div>
         </div>
