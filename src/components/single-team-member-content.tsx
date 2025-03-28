@@ -11,17 +11,23 @@ import { TeamMemberDescription, TeamMemberTitle } from "./ui/team-member-card";
 const SingleTeamMemberContent = () => {
   return (
     <div className="team-member-main-container">
-      <motion.div 
-        className="team-member-first-main-content-container"
-        initial={{ opacity: 0, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeIn" }}
-        whileInView={{ opacity: 1, y: 50}}
-        viewport={{ once: true }} 
-      >
-        <div>
+      <div 
+        className="team-member-first-main-content-container">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
           <img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1737546097/testimonial-one_rpk8zm.png" alt="" className="team-member-image" />
-        </div>
-        <div className="team-member-first-content-container">
+        </motion.div>
+        <motion.div 
+          className="team-member-first-content-container"
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
           <div>
             <TeamMemberTitle>Name</TeamMemberTitle>
             <TeamMemberDescription>Bagrat Leo</TeamMemberDescription>
@@ -48,8 +54,8 @@ const SingleTeamMemberContent = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <div  
         className="team-member-second-main-content-container"
       >

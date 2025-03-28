@@ -35,7 +35,7 @@ const MainHero = () => {
         {/* Bottom */}
         <motion.div className="main-hero-bottom-container"  
           initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.5, ease: "circInOut" }}
+          transition={{ duration: 2.2, ease: "circInOut" }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} 
         >
