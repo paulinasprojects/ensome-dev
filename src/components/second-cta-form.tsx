@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { z } from "zod"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -23,7 +24,13 @@ const SecondCtaForm = () => {
   };
 
   return (
-    <div className="second-cta-form-main-container">
+    <motion.div 
+      className="second-cta-form-main-container"
+      initial={{ opacity: 0, x: 20 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }} 
+    >
       <h3 className="second-cta-form-title">Contact Us</h3>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="second-cta-form-content-container">
@@ -82,7 +89,7 @@ const SecondCtaForm = () => {
         <button type="submit" className="second-cta-form-button">Send</button>
         </div>
       </form>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,9 +1,9 @@
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import ContactUsBreacrumb from "@/components/contact-us-breadcrumb";
 import ContactUsForm from "@/components/contact-us-form";
 import ContactUsInfo from "@/components/contact-us-info";
 import "@/styles/contact-us.scss";
-import { motion } from "framer-motion";
-import { containerVariants, itemVariants } from "@/lib/constants";
 
 const ContactUsPage = () => {
   return (
