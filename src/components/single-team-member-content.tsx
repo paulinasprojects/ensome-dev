@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 import CtaForm from "./cta-form";
 
@@ -9,12 +10,18 @@ import { TeamMemberDescription, TeamMemberTitle } from "./ui/team-member-card";
 
 const SingleTeamMemberContent = () => {
   return (
-    <div className="team-member-main-container">
+    <motion.div 
+      className="team-member-main-container"
+      initial={{ opacity: 0, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 50}}
+      viewport={{ once: true }} 
+    >
       <div className="team-member-first-main-content-container">
         <div>
           <img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1737546097/testimonial-one_rpk8zm.png" alt="" className="team-member-image" />
         </div>
-        <div className="team-member-first-content-container">
+        <motion.div className="team-member-first-content-container">
           <div>
             <TeamMemberTitle>Name</TeamMemberTitle>
             <TeamMemberDescription>Bagrat Leo</TeamMemberDescription>
@@ -41,7 +48,7 @@ const SingleTeamMemberContent = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="team-member-second-main-content-container">
         <div className="team-member-second-content-container">
@@ -53,7 +60,7 @@ const SingleTeamMemberContent = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 };
 
